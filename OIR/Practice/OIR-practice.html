@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V2HSPHWHZH');
+  </script>
+
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
+  <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free OIR Mock Test with timer — DOSPDP">
+  <meta name="author" content="Ravil Patel">
+  <title>OIR Mock Test — DOSPDP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="OIR.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- ═══ Navbar ═══ -->
+  <nav class="navbar">
+    <div class="inner">
+      <a href="https://ssb.colonelvyas.org/" class="brand">
+        <img src="assets/images/logo-icon.png" alt="DOSPDP">
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
+        <li><a href="https://ssb.colonelvyas.org#about">About SSB</a></li>
+        <li><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
+        <li><a href="https://ssb.colonelvyas.org#training">Free Training</a></li>
+        <li><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
+        <li><a href="https://colonelvyas.org/contact" target="_blank">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="https://ssb.colonelvyas.org">Home</a>
+    <a href="https://ssb.colonelvyas.org#about">About SSB</a>
+    <a href="https://ssb.colonelvyas.org#mock">Mock Tests</a>
+    <a href="https://ssb.colonelvyas.org#training">Free Training</a>
+    <a href="https://colonelvyas.org" target="_blank">About Us</a>
+    <a href="https://colonelvyas.org/contact" target="_blank">Contact</a>
+  </div>
+
+  <!-- ═══ Two-panel split layout ═══ -->
+  <div class="split-layout">
+
+    <!-- ══ LEFT PANEL ══ -->
+    <aside class="left-panel">
+
+      <span class="ssb-badge">SSB Preparation</span>
+
+      <h1>
+        Officers<br>
+        <span class="gold-word">Intelligence</span><br>
+        Rating Test
+      </h1>
+      <p class="left-sub">OIR &middot; Free Mock Series</p>
+      <div class="gold-line"></div>
+
+      <div class="notes-list">
+        <div class="note-row">
+          <div class="nr-num">1</div>
+          <p>Print the <strong>OMR sheet</strong> on the first page to simulate actual SSB test conditions.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">2</div>
+          <p>Use the <strong>timer widget</strong> (bottom-left) or follow the time limit mentioned in the PDF.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">3</div>
+          <p>Solutions are accessible via the <strong>links provided below each PDF</strong> after completing the test.</p>
+        </div>
+      </div>
+
+      <!-- ── Timer Widget ── -->
+      <!-- <div class="timer-widget">
+        <span class="timer-label">Timer</span>
+        <div class="timer-row">
+          <div class="timer-display" id="timerDisplay">00:00</div>
+          <div class="timer-controls">
+            <button class="t-btn play"  id="btnPlay"  title="Start"><i class="fa-solid fa-play"></i></button>
+            <button class="t-btn pause" id="btnPause" title="Pause"><i class="fa-solid fa-pause"></i></button>
+            <button class="t-btn reset" id="btnReset" title="Reset"><i class="fa-solid fa-rotate-right"></i></button>
+          </div>
+        </div>
+      </div> -->
+      <!-- <a href="https://ssb.colonelvyas.org" class="back-home"> -->
+      <a href="index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i> Back to Main Site
+      </a>
+    </aside>
+
+    <!-- ══ RIGHT PANEL ══ -->
+    <main class="right-panel">
+
+      <p class="mock-label">Mock Examination</p>
+      <h2>Start <br>OIR <span class="gold-word">Practice</span></h2>
+      <p class="rp-sub">Select a test below. Tests are timed and modelled on actual SSB patterns.</p>
+
+      <div class="test-cards">
+
+        <!-- Test 1 — Available -->
+        <div class="test-card">
+          <div class="tc-num">1</div>
+          <h4>OIR Set — 1</h4>
+          <span class="tc-badge available">Available</span>
+          <a href="../Practice/OIR-practice-1.html" target="_blank" class="btn-start">Start Mock</a>
+        </div>
+
+        <!-- Test 2 — Locked -->
+        <div class="test-card locked">
+          <div class="tc-num">2</div>
+          <h4>OIR Set — 2</h4>
+          <span class="tc-badge soon">Coming Soon</span>
+          <span class="btn-locked-lbl">Locked</span>
+        </div>
+
+        <!-- Test 3 — Locked -->
+        <div class="test-card locked">
+          <div class="tc-num">3</div>
+          <h4>OIR Set — 3</h4>
+          <span class="tc-badge soon">Coming Soon</span>
+          <span class="btn-locked-lbl">Locked</span>
+        </div>
+
+      </div><!-- /test-cards -->
+
+    </main><!-- /right-panel -->
+
+  </div><!-- /split-layout -->
+
+  <script>
+    /* ── Preloader ── */
+    window.addEventListener('load', function () {
+      var p = document.getElementById('js-preloader');
+      if (p) { p.style.opacity = '0'; setTimeout(function(){ p.style.display='none'; }, 400); }
+    });
+
+    /* ── Mobile nav ── */
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('mobileNav').classList.toggle('open');
+    });
+
+    /* ── Stopwatch timer ── */
+    var timerEl   = document.getElementById('timerDisplay');
+    var btnPlay   = document.getElementById('btnPlay');
+    var btnPause  = document.getElementById('btnPause');
+    var btnReset  = document.getElementById('btnReset');
+    var seconds   = 0;
+    var interval  = null;
+    var running   = false;
+
+    function pad(n) { return n < 10 ? '0' + n : n; }
+    function tick() {
+      seconds++;
+      var m = Math.floor(seconds / 60);
+      var s = seconds % 60;
+      timerEl.textContent = pad(m) + ':' + pad(s);
+    }
+    btnPlay.addEventListener('click', function () {
+      if (!running) {
+        running = true;
+        interval = setInterval(tick, 1000);
+        btnPlay.style.opacity = '0.4';
+      }
+    });
+    btnPause.addEventListener('click', function () {
+      if (running) {
+        running = false;
+        clearInterval(interval);
+        btnPlay.style.opacity = '1';
+      }
+    });
+    btnReset.addEventListener('click', function () {
+      running = false;
+      clearInterval(interval);
+      seconds = 0;
+      timerEl.textContent = '00:00';
+      btnPlay.style.opacity = '1';
+    });
+
+    /* ── Card fade-in ── */
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.test-card, .note-row').forEach(function (el, i) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(14px)';
+        el.style.transition = 'opacity 0.4s ease ' + (i * 0.08) + 's, transform 0.4s ease ' + (i * 0.08) + 's';
+        setTimeout(function () {
+          el.style.opacity = el.classList.contains('locked') ? '0.6' : '1';
+          el.style.transform = 'translateY(0)';
+        }, 200 + i * 80);
+      });
+    });
+  </script>
+
+</body>
+</html>

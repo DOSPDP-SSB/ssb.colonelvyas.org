@@ -1,44 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V2HSPHWHZH');
-</script>
- 
-  
-<link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-V2HSPHWHZH');
+  </script>
+
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
   <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="DOSPDP - Free SSB Mock Tests, OIR, TAT, WAT, SRT, PPDT. Defence Oriented SSB & Personality Development Program.">
+  <meta name="author" content="Ravil Patel">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Ravil Patel">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
-    <title>SSB Mock Tests and More - DOSPDP</title>
-     
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>SSB Mock Tests - Free Training | DOSPDP</title>
 
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/enhanced-style.css">
+  <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+  <style>
+    /* Custom Background Integration */
+    .main-banner {
+      position: relative;
+      /* Using a linear-gradient overlay (60% opacity) so the text pops against the white uniforms */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0,0,0.15 )), url('images/3.jpeg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 180px 0px 120px 0px;
+      color: #fff;
+    }
 
-  </head>
+    .main-banner h2 {
+      color: #ffffff ;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .info-stat h6 {
+      color: #eee;
+    }
+
+    .info-stat h4 {
+      color: #fff ;
+    }
+
+    /* Ensuring the "Free Badge" stands out */
+    .free-badge {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -49,467 +81,286 @@
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.3s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
             <a href="https://ssb.colonelvyas.org/" class="logo">
-              <h4><img src="assets/images/logo-icon.png" alt="DOSPDP-LOGO"></h4>
+              <h4><img src="assets/images/logo-icon.png" alt="DOSPDP Logo"></h4>
             </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
+            <ul class="nav" id="mainNav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#AboutSSB">SSB</a></li>
-              <li class="scroll-to-section"><a href="#free-ssb-training">Free SSB Training</a></li>
               <li class="scroll-to-section"><a href="#mock">Mock Tests</a></li>
+              <li class="scroll-to-section"><a href="#free-ssb-training">Free Training</a></li>
               <li class="scroll-to-section"><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org/contact" target="_blank">Contact Us</a></li> 
-              <li class="scroll-to-section"><div class="main-blue-button"><a href="#mock">Start SSB Training</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
+              <li class="scroll-to-section"><a href="https://colonelvyas.org/contact" target="_blank">Contact</a></li>
+              <!-- <li>
+                <div class="main-blue-button"><a href="#mock">Start Training</a></div>
+              </li> -->
+            </ul>
+            <a class="menu-trigger" id="menuTrigger"><span>Menu ☰</span></a>
           </nav>
         </div>
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
-  <!--<div class="main-banner wow fadeIn" id="top" data-wow-duration="0.3s" data-wow-delay="0.1s">
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="0.6s" data-wow-delay="0.1s">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Pricing:</h6>
-                      <h4>Completely Free</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Mock Tests: </h6>
-                      <h4>OIR, SRT, WAT, TAT and more</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Selections:</h6>
-                      <h4>15+ selections since 2020</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <h2 style="font-size: 35px; line-height: normal;">Defence Oriented SSB &amp; Personality Development Program</h2>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-green-button scroll-to-section">
-                      <a href="#mock">Start Your Training For Free</a>
-                    </div>
-                  </div>
+      <div class="row align-items-center">
+        <div class="col-lg-10 offset-lg-1 text-center"> <div class="left-content header-text wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.2s">
+
+            <div class="free-badge">
+              <span style="color: #000000; font-size:19px;">★ 100% Free — No Login Required</span>
+            </div>
+
+            <h2 style="font-size: 48px; margin-bottom: 30px;">Defence Oriented SSB &amp; Personality Development Program</h2>
+
+            <div class="row g-3 mb-5 justify-content-center">
+              <div class="col-md-3">
+                <div class="info-stat">
+                  <h6>Available Free Test</h6>
+                  <h4>20+</h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info-stat">
+                  <h6>Tests</h6>
+                  <h4>OIR · SRT · WAT · TAT · PPDT</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="info-stat">
+                  <h6>Recommendations</h6>
+                  <h4>25+</h4>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/banner-right-image.png" alt="Banner Right">
+
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+              <div class="main-green-button scroll-to-section">
+                <a href="#mock">Start Your Training →</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="mock" class="our-services section">
+    <div class="container">
+      <div class="section-heading wow bounceIn" data-wow-duration="0.8s">
+        <h6>Mock Tests</h6>
+        <h2>Appear for Tests with <span>Proper Solutions!</span></h2>
+      </div>
+    </div>
+
+    <div class="mock-grid wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+
+      <div class="mock-card">
+        <div class="mock-icon">
+          <img src="assets/images/service-icon-01.png" alt="OIR Test Icon">
+        </div>
+        <h4>OIR Test</h4>
+        <p class="mock-subtitle">Officers Intelligence Rating Test</p>
+        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>Practice & Mock</strong> Available
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+          <div class="main-green-button">
+            <a href="OIR/Practice/OIR-practice.html" style="background-color: #c9a84c; color: #1a3017; font-weight: 700;">Start
+              Practice Mode →</a>
+          </div>
+          <div class="main-green-button">
+            <a href="OIR.html">Start Mock Test →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mock-card">
+        <div class="mock-icon">
+          <img src="assets/images/service-icon-05.png" alt="PPDT Icon">
+        </div>
+        <h4>PPDT</h4>
+        <p class="mock-subtitle">Picture Perception and Description Test</p>
+        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>6</strong> Tests Available</div>
+        <div class="main-green-button">
+          <a href="PPDT.html">Start PPDT →</a>
+        </div>
+      </div>
+
+      <div class="mock-card">
+        <div class="mock-icon">
+          <img src="assets/images/service-icon-02.png" alt="TAT Icon">
+        </div>
+        <h4>TAT</h4>
+        <p class="mock-subtitle">Thematic Apperception Test</p>
+        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>5</strong> Tests Available</div>
+        <div class="main-green-button">
+          <a href="TAT.html">Start TAT →</a>
+        </div>
+      </div>
+
+      <div class="mock-card">
+        <div class="mock-icon">
+          <img src="assets/images/service-icon-03.png" alt="WAT Icon">
+        </div>
+        <h4>WAT</h4>
+        <p class="mock-subtitle">Word Association Test</p>
+        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>5</strong> Tests Available</div>
+        <div class="main-green-button">
+          <a href="WAT.html">Start WAT →</a>
+        </div>
+      </div>
+
+      <div class="mock-card">
+        <div class="mock-icon">
+          <img src="assets/images/service-icon-04.png" alt="SRT Icon">
+        </div>
+        <h4>SRT</h4>
+        <p class="mock-subtitle">Situation Reaction Test</p>
+        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>2</strong> Tests Available</div>
+        <div class="main-green-button">
+          <a href="SRT.html">Start SRT →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <div id="AboutSSB" class="about-us section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="assets/images/about-left-image.png" alt="About Staff Selection Board">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <img src="assets/images/about-left-image.png" alt="About SSB - Staff Selection Board">
           </div>
         </div>
-        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="section-heading">
-            <h6>SSB - Staff Selection Board</h6>
-            <h2>Best Place for Free <em>Training</em> &amp; personality development for SSB <span>with us</span></h2>
+        <div class="col-lg-7 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="section-heading text-start mb-4">
+            <h6>SSB — Services Selection Board</h6>
+            <h2>Best Place for Free <em>Training</em> &amp; Personality Development for <span>SSB</span></h2>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-sm-4">
+
+          <div class="row g-3 mb-4">
+            <div class="col-4">
               <div class="about-item">
-                <h4>15+</h4>
-                <h6>SSB Selections</h6>
+                <h4>25+</h4>
+                <h6>SSB Recomendations</h6>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-4">
               <div class="about-item">
                 <h4>1000+</h4>
                 <h6>Students</h6>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-4">
               <div class="about-item">
                 <h4>250+</h4>
-                <h6>Regular Webinars(Free)</h6>
+                <h6>Free Webinars</h6>
               </div>
             </div>
           </div>
-          <p><a rel="dofollow" href="https://colonelvyas.org" target="_blank">DOSPDP</a> is Non Profit Organisation focussing on providing Free SSB Training for the Youth wiling to join the Elite Arm Forces of India. SSB is a 5 day procedure after the written examination is cleared which involves Screening Test, Ground Training Tasks, Interviews, Group Discussion, etc. to find if you are the one who is eligible to join Indian Arm Forces and serve it in the manner officers have to work for the nation.</p>
-          <div class="main-green-button"><a href="ssb-5days.pdf" rel="dofollow" target="_blank">Learn more in Detail</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section style="padding: 50px;"></section>
-  <div id="#" class="features section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="features-content">
-            <div class="row">
-              <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s" >
-                <h6 style="text-align: center; padding-top: 12px;">Strategy</h6>
-                <h2 style="text-align: center;">Super Strategy to crack <span>SSB</span></h2>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                  <div class="first-number number">
-                    <h6>01</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Know SSB</h4>
-                  <div class="line-dec"></div>
-                  <p>Know what actually SSB is, and what is it finding in you!?</p><br>
-                  <div class="main-green-button"><a href="ssb-5days.pdf">Learn from here</a></div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <div class="second-number number">
-                    <h6>02</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Develop a Plan</h4>
-                  <div class="line-dec"></div>
-                  <p>Work on your stamina, brain power, aptitude and your power to grasp things more quickly.</p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                  <div class="third-number number">
-                    <h6>03</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Implementation</h4>
-                  <div class="line-dec"></div>
-                  <p>After you develop your plan make a time table which includes some time of you with any newspaper, some creative time to know yourself and some to spend with your family.</p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                  <div class="fourth-number number">
-                    <h6>04</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Test Yourself</h4>
-                  <div class="line-dec"></div>
-                  <p>Yes! Test yourself. You should test atleast 4-5 mocks of all available series on the website and analyse it yourself to improve evrytime.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--<div class="col-lg-12">
-          <div class="skills-content">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                  <div class="progress" data-percentage="80">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        80%<br>
-                        <span>HTML/CSS/JS</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <div class="progress" data-percentage="10">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        10%<br>
-                        <span>Wordpress</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                  <div class="progress" data-percentage="90">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        90%<br>
-                        <span>Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                  <div class="progress" data-percentage="70">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        70%<br>
-                        <span>Photoshop</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <p>
+            <a rel="dofollow" href="https://colonelvyas.org" target="_blank"><strong>DOSPDP</strong></a> is a Non-Profit
+            Organisation focused on providing Free SSB Training for youth willing to join the Elite Armed Forces of
+            India. SSB is a 5-day procedure after the written examination is cleared — involving Screening Tests, Ground
+            Training Tasks, Interviews, Group Discussions, and more.
+          </p>
+
+          <div class="main-green-button">
+            <a href="ssb-5days.pdf" rel="dofollow" target="_blank">Learn More in Detail →</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="free-ssb-training" class="container">
-    <div class="free">
-      <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+  <div id="free-ssb-training">
+    <div class="container">
+      <div class="section-heading wow bounceIn" data-wow-duration="0.8s">
+        <h6>Enroll Today</h6>
         <h2>Free SSB Training</h2>
-        <h3><strong>The best That You Can Get!</strong></h3>
+        <h3><strong>The Best That You Can Get!</strong></h3>
       </div>
-      <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <p>To register and get daily updates for SSB you are required to follow below procedure from the link. We would be helping you with the best we can with the best educators and SSB Experts. We expect lots of love from you and just a small help. We also keep some expectation that you would share our mission to everyone you can! </p>
-        <p>No Hidden Charges or any charges, We are completely free!</p><br>
-        <div style="justify-content: center; display: flex;">
-          <a href="http://colonelvyas.org/registration" target="_blank"><button class="btn-ravil">Register Now</button></a>&nbsp;&nbsp;
-          <a href="#mock"><button class="btn-ravil">Attempt Mock Test</button></a>
-          </div>
-      </div>
-    </div>
-  </div>-->
-<br><br><br><br><br><br><br>
-  
-  <div id="mock" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6>Mock Tests</h6>
-            <h2 style="font-size: 24px;">Appear for tests with proper solutions!</h2>
+      <div class="free">
+        <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <p>To register and get daily updates for SSB, follow the link below. We help you with the best educators and
+            SSB Experts — completely free, with no hidden charges.</p>
+          <p>We just hope you share our mission with everyone you can! 💚</p>
+          <br>
+          <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:12px;">
+            <a href="http://colonelvyas.org/registration" target="_blank"><button class="btn-ravil">Register
+                Now</button></a>
+            <a href="#mock"><button class="btn-ravil">Attempt Mock Test</button></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">OIR Test</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/OIR">Officers Intelligece Rating Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>1</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-05.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">PPDT</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/PPDT">Picture Perception and Description Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>6</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">TAT</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/TAT">Thematic Apperception Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">WAT</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/WAT">Word Association Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">SRT</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/SRT">Situation Reaction Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--<div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Optimizing Keywords</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Page Optimizations</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Deep URL Analysis</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
   </div>
 
-  
-<div style="background-color: #f7f7f7;">
+
   <div class="footer-basic">
     <footer>
-        <div class="social"><a href="http://facebook.colonelvyas.org"><i class="fa fa-facebook"></i></a><a href="http://insta.colonelvyas.org"><i class="fa fa-instagram"></i></a><a href="http://twitter.colonelvyas.org"><i class="fa fa-twitter"></i></a><a href="http://Youtube.colonelvyas.org"><i class="fa fa-youtube-play"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://colonelvyas.org">Main Site</a></li>
-            <li class="list-inline-item"><a href="#mock">Mock Tests</a></li>
-            <li class="list-inline-item"><a href="https://colonelvyas.org/registration">Register for Free SSB Training</a></li>
-            <li class="list-inline-item"><a href="https://colonelvyas.org/contact">Contact Us</a></li>
-        </ul>
-        <p class="copyright">DOSPDP - Defence Oriented SSB & personality development Program © <script>document.write(new Date().getFullYear())</script></p>
+      <div class="social">
+        <a href="http://facebook.colonelvyas.org" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="http://insta.colonelvyas.org" title="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="http://twitter.colonelvyas.org" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="http://Youtube.colonelvyas.org" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://colonelvyas.org">Main Site</a></li>
+        <li class="list-inline-item"><a href="#mock">Mock Tests</a></li>
+        <li class="list-inline-item"><a href="https://colonelvyas.org/registration">Register Free</a></li>
+        <li class="list-inline-item"><a href="https://colonelvyas.org/contact">Contact Us</a></li>
+      </ul>
+      <p class="copyright">DOSPDP — Defence Oriented SSB &amp; Personality Development Program &copy;
+        <script>document.write(new Date().getFullYear())</script>
+      </p>
     </footer>
-    </div>
   </div>
-  <!-- Scripts -->
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuTrigger').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+
+    // Hide preloader
+    window.addEventListener('load', function () {
+      var preloader = document.getElementById('js-preloader');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        setTimeout(function () { preloader.style.display = 'none'; }, 500);
+      }
+    });
+
+    // Active nav link on scroll
+    var sections = document.querySelectorAll('div[id], section[id]');
+    var navLinks = document.querySelectorAll('.nav li a');
+    window.addEventListener('scroll', function () {
+      var scrollPos = window.scrollY + 100;
+      sections.forEach(function (section) {
+        if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+          navLinks.forEach(function (link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + section.id) link.classList.add('active');
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
+
 </html>

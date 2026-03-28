@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V2HSPHWHZH');
+  </script>
+
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
+  <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free OIR Practice Test — DOSPDP">
+  <meta name="author" content="Ravil Patel">
+  <title>OIR Practice — DOSPDP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="OIRMOCK.css">
+</head>
+
+<body>
+
+  <div id="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="inner">
+      <a href="https://ssb.colonelvyas.org/" class="brand">
+        <img src="https://ssb.colonelvyas.org/assets/images/logo-icon.png" alt="DOSPDP">
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
+        <li><a href="https://ssb.colonelvyas.org#about">About SSB</a></li>
+        <li><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
+        <li><a href="https://ssb.colonelvyas.org#training">Free Training</a></li>
+        <li><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="https://ssb.colonelvyas.org">Home</a>
+    <a href="https://ssb.colonelvyas.org#about">About SSB</a>
+    <a href="https://ssb.colonelvyas.org#mock">Mock Tests</a>
+    <a href="https://ssb.colonelvyas.org#training">Free Training</a>
+    <a href="https://colonelvyas.org" target="_blank">About Us</a>
+  </div>
+
+  <main class="practice-container">
+    <div class="practice-header">
+      <span class="ssb-badge">OIR Practice Mode</span>
+      <h1 class="page-title">Officer Intelligence <span class="gold-word">Rating</span></h1>
+      <p class="subtitle">Select an option to check your answer immediately.</p>
+    </div>
+
+    <div class="question-card" id="questionCard">
+      <div class="loading-text">Loading Questions...</div>
+    </div>
+    
+  </main>
+  <script src="OIR_Questions.js"></script>
+  <script src="OIRMOCK.js"></script>
+</body>
+</html>

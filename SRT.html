@@ -1,185 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V2HSPHWHZH');
+  </script>
 
-  <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V2HSPHWHZH');
-</script>
- 
-<link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
   <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free SRT Mock Test — Situation Reaction Test — DOSPDP">
+  <meta name="author" content="Ravil Patel">
+  <title>SRT Mock Test — DOSPDP</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Ravil Patel">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>SRT Mock Test - DOSPDP</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
+  <link rel="stylesheet" href="assets/css/SRT.css">
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
+  <div id="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="dots"><span></span><span></span><span></span></div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="https://ssb.colonelvyas.org/" class="logo">
-              <h4><img src="assets/images/logo-icon.png" alt="DOSPDP-LOGO"></h4>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#AboutSSB">SSB</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#free-ssb-training">Free SSB Training</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org/contact" target="_blank">Contact Us</a></li> 
-              <li></li>
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
+  <nav class="navbar">
+    <div class="inner">
+      <a href="https://ssb.colonelvyas.org/" class="brand">
+        <img src="assets/images/logo-icon.png" alt="DOSPDP">
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
+        <li><a href="https://ssb.colonelvyas.org#about">About SSB</a></li>
+        <li><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
+        <li><a href="https://ssb.colonelvyas.org#training">Free Training</a></li>
+        <li><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
+        <li><a href="https://colonelvyas.org/contact" target="_blank">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </nav>
 
-  <!-- ***** Content Start **** -->
-  <div style="padding-top: 95px;"></div>
-  <div id="free-ssb-training" class="container">
-    <div class="free">
-      <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-        <h2>SRT</h2>
-        <h3><strong>Situation Reaction Test</strong></h3>
-        <div class="main-green-button" style="text-align: center;"><a href="#Mocksrt">Skip to Mock Test</a></div>
-      </div>
-      <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <h3>What is SRT?</h3>
-        <p>SRT stands for Situation Reaction Test. You need to react on given situation. For example, <i>the situation given is: He saw someone smoking in public. He...</i></p><p>You need to write the answer after "HE". The answer could be, He asked him not to smoke in public and instead smoke in private.</p>
-        <br>
-        <h3>Important points to note</h3>
-        <ul>
-            <li>A total of 60 situations will be given to the candidates and they have to respond to it within 30 minute time limit. </li>
-            <li>There will be timer in left-bottom to be used with timing of 30 min.</li>
-            <li>You can download the pdf and attempt it after printing it out <b>(Recommended)</b></li>
-        </ul>
-      </div>
-    </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="https://ssb.colonelvyas.org">Home</a>
+    <a href="https://ssb.colonelvyas.org#about">About SSB</a>
+    <a href="https://ssb.colonelvyas.org#mock">Mock Tests</a>
+    <a href="https://ssb.colonelvyas.org#training">Free Training</a>
+    <a href="https://colonelvyas.org" target="_blank">About Us</a>
+    <a href="https://colonelvyas.org/contact" target="_blank">Contact</a>
   </div>
-  <div id="mock" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6 id="Mocksrt">Mock Tests</h6>
-            <h2 style="font-size: 24px;">Appear for SRT Now!</h2>
-          </div>
+
+  <div class="split-layout">
+
+    <aside class="left-panel">
+
+      <span class="ssb-badge">SSB Preparation</span>
+
+      <h1>
+        Situation<br>
+        <span class="gold-word">Reaction</span><br>
+        Test
+      </h1>
+      <p class="left-sub">SRT &middot; Free Mock Series</p>
+      <div class="gold-line"></div>
+
+      <div class="notes-list">
+        <div class="note-row">
+          <div class="nr-num">1</div>
+          <p>A total of <strong>60 situations</strong> will be given. You must respond to all of them within a <strong>30-minute time limit</strong>.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">2</div>
+          <p>There will be a <strong>timer</strong> at the bottom-left of the screen to help you track your 30 minutes.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">3</div>
+          <p>React naturally. For example, if the situation says: <i>"He saw someone smoking in public. He..."</i>, complete the action practically.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">4</div>
+          <p>You can <strong>download the PDF</strong> and attempt the test after printing it out <strong>(Recommended)</strong>.</p>
         </div>
       </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service-item wow">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/1-co.png" alt="Numerical number">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">SRT - 1</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="SRT/MOCK-1.html">Start Mock</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/2-co.png" alt="Numerical number">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">SRT - 2</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="SRT/MOCK-2.html">Start Mock</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <a href="index.html" class="back-home">
+      <!-- <a href="https://ssb.colonelvyas.org" class="back-home"> -->
+        <i class="fa-solid fa-arrow-left"></i> Back to Main Site
+      </a>
+    </aside>
+
+    <main class="right-panel">
+
+      <p class="mock-label">Mock Examination</p>
+      <h2>Appear for<br>SRT Now</h2>
+      <p class="rp-sub">Select a test below. React to everyday life situations to demonstrate your quick decision-making and common sense.</p>
+
+      <div class="test-cards">
+
+        <div class="test-card">
+          <div class="tc-num">1</div>
+          <h4>SRT Test — 1</h4>
+          <span class="tc-badge">Available</span>
+          <a href="SRT/MOCK-1.html" class="btn-start">Start Mock</a>
         </div>
 
-  <!-- **** Content End **** -->
+        <div class="test-card">
+          <div class="tc-num">2</div>
+          <h4>SRT Test — 2</h4>
+          <span class="tc-badge">Available</span>
+          <a href="SRT/MOCK-2.html" class="btn-start">Start Mock</a>
+        </div>
 
-
-
-
-<div style="background-color: #f7f7f7;">
-    <div class="footer-basic">
-      <footer>
-          <div class="social"><a href="http://facebook.colonelvyas.org"><i class="fa fa-facebook"></i></a><a href="http://insta.colonelvyas.org"><i class="fa fa-instagram"></i></a><a href="http://twitter.colonelvyas.org"><i class="fa fa-twitter"></i></a><a href="http://Youtube.colonelvyas.org"><i class="fa fa-youtube-play"></i></a></div>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://colonelvyas.org">Main Site</a></li>
-              <li class="list-inline-item"><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
-              <li class="list-inline-item"><a href="https://colonelvyas.org/registration">Register for Free SSB Training</a></li>
-              <li class="list-inline-item"><a href="https://colonelvyas.org/contact">Contact Us</a></li>
-          </ul>
-          <p class="copyright">DOSPDP - Defence Oriented SSB & personality development Program © <script>document.write(new Date().getFullYear())</script></p>
-      </footer>
       </div>
-    </div>
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
-  
-  </body>
-  </html>
+    </main>
+
+  </div>
+
+  <script>
+    /* Preloader */
+    window.addEventListener('load', function () {
+      var p = document.getElementById('js-preloader');
+      if (p) { p.style.opacity = '0'; setTimeout(function(){ p.style.display='none'; }, 400); }
+    });
+
+    /* Mobile nav */
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('mobileNav').classList.toggle('open');
+    });
+
+    /* Card stagger fade-in */
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.test-card, .note-row').forEach(function (el, i) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(14px)';
+        el.style.transition = 'opacity 0.4s ease ' + (i * 0.07) + 's, transform 0.4s ease ' + (i * 0.07) + 's';
+        setTimeout(function () {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, 180 + i * 70);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* =============================================
+   DOSPDP — TAT Mock Test Player
+   Centered Focus Mode UI
+   ============================================= */
+:root {
+  --green-dark: #152812;
+  --green-main: #2d5a27;
+  --green-mid: #3d7a35;
+  --gold: #c9a84c;
+  --cream: #f4f1ea;
+  --white: #ffffff;
+  --text-head: #182415;
+  --text-body: #3a5038;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 32px rgba(45, 90, 39, 0.15);
+  --shadow-btn: 0 8px 24px rgba(201, 168, 76, 0.3);
+  --ease: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--cream);
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Top Navigation Bar ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 70px;
+  padding: 0 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.1);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green-dark);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-brand svg {
+  color: var(--gold);
+  height: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-body);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: var(--ease);
+}
+
+.nav-link:hover {
+  background: rgba(45, 90, 39, 0.05);
+  color: var(--green-main);
+}
+
+.nav-link svg {
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ── Main Layout ── */
+main {
+  height: 100vh;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Intro Card ── */
+.intro-card {
+  background: var(--white);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 24px;
+  padding: 50px 40px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border-top: 4px solid var(--gold);
+}
+
+.intro-logo {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px auto;
+  background-color: var(--green-dark);
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.intro-card h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 38px;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.intro-card p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #556b53;
+}
+
+.instructions-box {
+  background: rgba(45, 90, 39, 0.03);
+  border: 1px solid rgba(45, 90, 39, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.instructions-box h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  color: var(--green-main);
+  margin-bottom: 16px;
+}
+
+.instructions-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.instructions-box li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.instructions-box li::before {
+  content: '✓';
+  color: var(--gold);
+  font-weight: 700;
+  background: rgba(201, 168, 76, 0.15);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+/* ── Start Button ── */
+.btn-start {
+  background: var(--gold);
+  color: var(--green-dark);
+  border: none;
+  border-radius: 50px;
+  padding: 18px 40px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: var(--ease);
+  animation: pulse 2s infinite;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-start:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(201, 168, 76, 0.4);
+  background: #d4b55e;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(201, 168, 76, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0);
+  }
+}
+
+/* Mobile Adaptations */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  .nav-links span {
+    display: none;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  .intro-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .intro-card h1 {
+    font-size: 30px;
+  }
+}
+
+#exitBtn:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+}

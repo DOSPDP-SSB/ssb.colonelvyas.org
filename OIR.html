@@ -1,227 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V2HSPHWHZH');
+  </script>
 
-  <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V2HSPHWHZH');
-</script>
- 
-<link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
+  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
   <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free OIR Mock Test with timer — DOSPDP">
+  <meta name="author" content="Ravil Patel">
+  <title>OIR Mock Test — DOSPDP</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Explore free OIR mock papers with timer and standard questions for 100% success in OIR">
-    <meta name="author" content="Ravil Patel">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-    <title>OIR Mock Test - DOSPDP</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-V2HSPHWHZH');
-        </script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="OIR/Practice/OIR.css">
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
+  <!-- Preloader -->
+  <div id="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="dots"><span></span><span></span><span></span></div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="https://ssb.colonelvyas.org/" class="logo">
-              <h4><img src="assets/images/logo-icon.png" alt="DOSPDP-LOGO"></h4>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#AboutSSB">SSB</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#free-ssb-training">Free SSB Training</a></li>
-              <li class="scroll-to-section"><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org/contact" target="_blank">Contact Us</a></li> 
-              <li></li>
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
+  <!-- ═══ Navbar ═══ -->
+  <nav class="navbar">
+    <div class="inner">
+      <a href="https://ssb.colonelvyas.org/" class="brand">
+        <img src="assets/images/logo-icon.png" alt="DOSPDP">
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="https://ssb.colonelvyas.org" class="active">Home</a></li>
+        <li><a href="https://ssb.colonelvyas.org#about">About SSB</a></li>
+        <li><a href="https://ssb.colonelvyas.org#mock">Mock Tests</a></li>
+        <li><a href="https://ssb.colonelvyas.org#training">Free Training</a></li>
+        <li><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
+        <li><a href="https://colonelvyas.org/contact" target="_blank">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <!-- ***** Content Start **** -->
-  <div style="padding-top: 95px;"></div>
-  <div id="free-ssb-training" class="container">
-    <div class="free">
-      <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-        <h2>OIR</h2>
-        <h3><strong>Officers Intelligence Rating Test</strong></h3>
-	<div class="main-green-button" style="text-align: center;"><a href="#Mockoir">Skip to Mock Test</a></div>
-      </div>
-      <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <h3>Important points to note</h3>
-        <ul>
-            <li>1. Take printout of the OMR sheet on the first page and appear it for having proper test as followed in SSB.</li>
-            <li>2. Timer option is available in left bottom corner. Please use it or give the test according to time mentioned in pdf.</li>
-            <li>3. The solutions can be accessed from the links given below the pdf. </li>
-        </ul>
-      </div>
-    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="https://ssb.colonelvyas.org">Home</a>
+    <a href="https://ssb.colonelvyas.org#about">About SSB</a>
+    <a href="https://ssb.colonelvyas.org#mock">Mock Tests</a>
+    <a href="https://ssb.colonelvyas.org#training">Free Training</a>
+    <a href="https://colonelvyas.org" target="_blank">About Us</a>
+    <a href="https://colonelvyas.org/contact" target="_blank">Contact</a>
   </div>
-  <div id="mock" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6 id="Mockoir">Mock Tests</h6>
-            <h2 style="font-size: 24px;">Appear for OIR Now!</h2>
-          </div>
+
+  <!-- ═══ Two-panel split layout ═══ -->
+  <div class="split-layout">
+
+    <!-- ══ LEFT PANEL ══ -->
+    <aside class="left-panel">
+
+      <span class="ssb-badge">SSB Preparation</span>
+
+      <h1>
+        Officers<br>
+        <span class="gold-word">Intelligence</span><br>
+        Rating Test
+      </h1>
+      <p class="left-sub">OIR &middot; Free Mock Series</p>
+      <div class="gold-line"></div>
+
+      <div class="notes-list">
+        <div class="note-row">
+          <div class="nr-num">1</div>
+          <p>Print the <strong>OMR sheet</strong> on the first page to simulate actual SSB test conditions.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">2</div>
+          <p>Use the <strong>timer widget</strong> (bottom-left) or follow the time limit mentioned in the PDF.</p>
+        </div>
+        <div class="note-row">
+          <div class="nr-num">3</div>
+          <p>Solutions are accessible via the <strong>links provided below each PDF</strong> after completing the test.</p>
         </div>
       </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/1-co.png" alt="Numerical number">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">OIR Test - 1</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="OIR/MOCK-1.html" target="_blank">Start Mock</a></div>
-                </div>
-              </div>
-            </div>
+
+      <!-- ── Timer Widget ── -->
+      <!-- <div class="timer-widget">
+        <span class="timer-label">Timer</span>
+        <div class="timer-row">
+          <div class="timer-display" id="timerDisplay">00:00</div>
+          <div class="timer-controls">
+            <button class="t-btn play"  id="btnPlay"  title="Start"><i class="fa-solid fa-play"></i></button>
+            <button class="t-btn pause" id="btnPause" title="Pause"><i class="fa-solid fa-pause"></i></button>
+            <button class="t-btn reset" id="btnReset" title="Reset"><i class="fa-solid fa-rotate-right"></i></button>
           </div>
         </div>
+      </div> -->
+     <a href="index.html" class="back-home">
+      <!-- <a href="https://ssb.colonelvyas.org" class="back-home"> -->
+        <i class="fa-solid fa-arrow-left"></i> Back to Main Site
+      </a>
+    </aside>
 
+    <!-- ══ RIGHT PANEL ══ -->
+    <main class="right-panel">
 
-        <!--<div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/2-co.png" alt="Numerical number">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">OIR Test - 2</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="OIR/MOCK-2.html" target="_blank">Start Mock</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <p class="mock-label">Mock Examination</p>
+      <h2>Appear for<br>OIR Now</h2>
+      <p class="rp-sub">Select a test below. Tests are timed and modelled on actual SSB patterns.</p>
+
+      <div class="test-cards">
+
+        <!-- Test 1 — Available -->
+        <div class="test-card">
+          <div class="tc-num">1</div>
+          <h4>OIR Test — 1</h4>
+          <span class="tc-badge available">Available</span>
+          <a href="OIR/MOCK-1.html" target="_blank" class="btn-start">Start Mock</a>
         </div>
 
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/3-co.png" alt="Numerical number">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">OIR Test - 3</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="OIR/MOCK-3.html" target="_blank">Start Mock</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Test 2 — Locked -->
+        <div class="test-card locked">
+          <div class="tc-num">2</div>
+          <h4>OIR Test — 2</h4>
+          <span class="tc-badge soon">Coming Soon</span>
+          <span class="btn-locked-lbl">Locked</span>
         </div>
 
-        <!--<div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4 style="text-align: center;">WAT</h4>
-                  <div class="main-green-button" style="text-align: center;"><a href="https://ssb.colonelvyas.org/WAT">Word Association Test</a></div>
-                  <p style="text-align: center;"><strong>Test Available: </strong>2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
+        <!-- Test 3 — Locked -->
+        <div class="test-card locked">
+          <div class="tc-num">3</div>
+          <h4>OIR Test — 3</h4>
+          <span class="tc-badge soon">Coming Soon</span>
+          <span class="btn-locked-lbl">Locked</span>
         </div>
 
-  <!-- **** Content End **** -->
+      </div><!-- /test-cards -->
 
-  <!-- ***** Footer Start*****-->
-  <div style="background-color: #f7f7f7;">
-    <div class="footer-basic">
-      <footer>
-          <div class="social"><a href="http://facebook.colonelvyas.org"><i class="fa fa-facebook"></i></a><a href="http://insta.colonelvyas.org"><i class="fa fa-instagram"></i></a><a href="http://twitter.colonelvyas.org"><i class="fa fa-twitter"></i></a><a href="http://Youtube.colonelvyas.org"><i class="fa fa-youtube-play"></i></a></div>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://colonelvyas.org">Main Site</a></li>
-              <li class="list-inline-item"><a href="#mock">Mock Tests</a></li>
-              <li class="list-inline-item"><a href="https://colonelvyas.org/registration">Register for Free SSB Training</a></li>
-              <li class="list-inline-item"><a href="https://colonelvyas.org/contact">Contact Us</a></li>
-          </ul>
-          <p class="copyright">DOSPDP - Defence Oriented SSB & personality development Program © <script>document.write(new Date().getFullYear())</script></p>
-      </footer>
-      </div>
-    </div>
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
-  
-  </body>
-  </html>
+    </main><!-- /right-panel -->
+
+  </div><!-- /split-layout -->
+
+  <script>
+    /* ── Preloader ── */
+    window.addEventListener('load', function () {
+      var p = document.getElementById('js-preloader');
+      if (p) { p.style.opacity = '0'; setTimeout(function(){ p.style.display='none'; }, 400); }
+    });
+
+    /* ── Mobile nav ── */
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('mobileNav').classList.toggle('open');
+    });
+
+    /* ── Stopwatch timer ── */
+    var timerEl   = document.getElementById('timerDisplay');
+    var btnPlay   = document.getElementById('btnPlay');
+    var btnPause  = document.getElementById('btnPause');
+    var btnReset  = document.getElementById('btnReset');
+    var seconds   = 0;
+    var interval  = null;
+    var running   = false;
+
+    function pad(n) { return n < 10 ? '0' + n : n; }
+    function tick() {
+      seconds++;
+      var m = Math.floor(seconds / 60);
+      var s = seconds % 60;
+      timerEl.textContent = pad(m) + ':' + pad(s);
+    }
+    btnPlay.addEventListener('click', function () {
+      if (!running) {
+        running = true;
+        interval = setInterval(tick, 1000);
+        btnPlay.style.opacity = '0.4';
+      }
+    });
+    btnPause.addEventListener('click', function () {
+      if (running) {
+        running = false;
+        clearInterval(interval);
+        btnPlay.style.opacity = '1';
+      }
+    });
+    btnReset.addEventListener('click', function () {
+      running = false;
+      clearInterval(interval);
+      seconds = 0;
+      timerEl.textContent = '00:00';
+      btnPlay.style.opacity = '1';
+    });
+
+    /* ── Card fade-in ── */
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.test-card, .note-row').forEach(function (el, i) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(14px)';
+        el.style.transition = 'opacity 0.4s ease ' + (i * 0.08) + 's, transform 0.4s ease ' + (i * 0.08) + 's';
+        setTimeout(function () {
+          el.style.opacity = el.classList.contains('locked') ? '0.6' : '1';
+          el.style.transform = 'translateY(0)';
+        }, 200 + i * 80);
+      });
+    });
+  </script>
+
+</body>
+</html>
