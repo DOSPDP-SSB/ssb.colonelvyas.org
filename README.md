@@ -1,85 +1,329 @@
-# SSB ColonelVyas.org Project
+# SSB ColonelVyas.org - Defence Oriented SSB & Personality Development Program
 
-This repository contains the static website for `ssb.colonelvyas.org` which provides mock tests, practice papers, and resources for various Indian Armed Forces examinations (CDS, NDA, OIR, SRT, etc.). The project is a collection of HTML, CSS, JavaScript, and asset files organized into folders representing different sections of the site.
+## 📖 Overview
 
----
+**SSB ColonelVyas.org** is a comprehensive static website dedicated to providing free mock tests, practice papers, and educational resources for Indian Armed Forces examinations. The platform focuses on SSB (Services Selection Board) preparation, covering key testing components including OIR (Officer Intelligence Rating), TAT (Thematic Apperception Test), WAT (Word Association Test), SRT (Situation Reaction Test), and PPDT (Picture Perception and Description Test).
 
-## 📁 Repository Structure
+### 🎯 Purpose
+- **Free Training Platform**: Offers unlimited access to mock tests and practice materials
+- **SSB Preparation**: Specifically designed for Defence Oriented SSB & Personality Development Program
+- **Comprehensive Coverage**: Includes CDS (Combined Defence Services) and NDA-NA (National Defence Academy - Naval Academy) exam preparation
+- **Educational Resource**: Features previous year papers, video tutorials, and interactive practice sessions
 
-```
-├── assets/              # Shared CSS, JS, images, fonts
-├── blog/                # Blog-related pages and practice series
-├── images/              # Global images used on site
-├── OIR/                 # OIR-specific tests and resources
-├── PPDT/                # PPDT-specific mock tests and scripts
-├── PREVIOUS-YEAR-PAPER/ # Organized past papers by exam and year
-├── SRT/                 # SRT mock tests
-├── TAT/                 # TAT mock tests
-├── WAT/                 # WAT mock tests
-├── vendor/              # Third-party libraries (Bootstrap, jQuery)
-├── index.html           # Main landing page
-├── 404.html             # Custom error page
-└── ...                  # Other standalone HTML pages
-```
-
-> Note: The structure is primarily static; each folder contains HTML pages, CSS files (usually `style.css`), and JavaScript (`basics.js`, `js-content/*`).
+### 👨‍💼 Author & Maintenance
+- **Author**: Ravil Patel
+- **Repository**: [DOSPDP-SSB/ssb.colonelvyas.org](https://github.com/DOSPDP-SSB/ssb.colonelvyas.org)
+- **Live Site**: [ssb.colonelvyas.org](https://ssb.colonelvyas.org)
 
 ---
 
-## 🚀 Running the Project Locally
+## 🏗️ Technology Stack
 
-Since this is a static site, you can serve it using any simple HTTP server. Here are a couple of easy options:
+### Frontend Technologies
+- **HTML5**: Semantic markup for all pages and test interfaces
+- **CSS3**: Custom styling with responsive design
+- **JavaScript (ES5+)**: Interactive functionality and test logic
+- **jQuery 3.4+**: DOM manipulation and event handling
 
-### Using Python 3 (built-in server)
+### Frameworks & Libraries
+- **Bootstrap 4.3+**: Responsive grid system and UI components
+- **Font Awesome 5+**: Icons for navigation and UI elements
+- **Owl Carousel**: Image sliders and galleries
+- **jQuery Countdown Timer**: Test timing functionality
 
-1. Open a command prompt or terminal.
-2. Navigate to the project root directory:
-   ```bash
-     ```
-3. Start the server:
-   ```bash
-   python -m http.server 8000
-   ```
-4. Open your browser and visit [http://localhost:8000](http://localhost:8000).
+### Additional Tools
+- **Google Analytics**: Usage tracking and analytics
+- **Google Fonts**: Typography (Rajdhani, Source Sans 3, Open Sans)
+- **CDN Resources**: Bootstrap, jQuery, Font Awesome loaded from CDNs for performance
 
-> The site will remain accessible until you stop the server (Ctrl+C).
+### Development Environment
+- **Static Site**: No build process required - pure HTML/CSS/JS
+- **Local Development**: Served via HTTP server (Python/Node.js)
+- **Version Control**: Git for source code management
 
-### Using Node.js `http-server` (if installed)
+---
 
+## 🌐 Website Structure & Architecture
+
+### Core Architecture
+The website follows a **static site architecture** with organized folder structure for maintainability and scalability. Each exam section is self-contained with its own assets while sharing common resources.
+
+### Directory Structure
+```
+ssb.colonelvyas.org/
+├── 📄 index.html                 # Main landing page with navigation
+├── 📄 404.html                   # Custom error page
+├── 📄 README.md                  # This documentation
+├── 📄 sitemap.txt                # SEO sitemap for search engines
+├── 📁 assets/                    # Shared resources
+│   ├── 📁 css/                   # Global stylesheets
+│   │   ├── 📄 main.css           # Core styling (resets, grids)
+│   │   ├── 📄 enhanced-style.css # Enhanced UI components
+│   │   ├── 📄 animated.css       # Animation effects
+│   │   ├── 📄 fontawesome.css    # Font Awesome integration
+│   │   ├── 📄 owl.css            # Carousel styling
+│   │   └── 📄 [exam].css         # Exam-specific styles
+│   ├── 📁 js/                    # Global JavaScript
+│   │   ├── 📄 custom.js          # Custom interactions
+│   │   ├── 📄 animation.js       # Animation handlers
+│   │   ├── 📄 isotope.js         # Filtering/sorting
+│   │   ├── 📄 owl-carousel.js    # Carousel functionality
+│   │   ├── 📄 tabs.js            # Tab navigation
+│   │   └── 📄 imagesloaded.js    # Image loading detection
+│   ├── 📁 fonts/                 # Custom font files
+│   └── 📁 images/                # Shared images and icons
+├── 📁 vendor/                    # Third-party libraries
+│   ├── 📁 bootstrap/             # Bootstrap framework
+│   └── 📁 jquery/                # jQuery library
+├── 📁 images/                    # Global site images
+├── 📁 [EXAM_FOLDERS]/            # Exam-specific content
+│   ├── 📄 MOCK-1.html to MOCK-6.html  # Mock test pages
+│   ├── 📄 css-file.css           # Local styling
+│   ├── 📄 jquery-countdown-timer-control.js  # Timer script
+│   ├── 📁 Practice/              # Practice sections
+│   └── 📁 vid/                   # Video resources
+├── 📁 PREVIOUS-YEAR-PAPER/       # Historical exam papers
+│   ├── 📁 CDS/                   # Combined Defence Services
+│   └── 📁 NDA-NA/                # National Defence Academy
+├── 📁 PDF/                       # PDF resources by exam
+├── 📁 Archive/                   # Legacy content
+└── 📁 [EXAM]_video/              # Video tutorials
+```
+
+### Key Components
+
+#### 1. **Landing Page (index.html)**
+- Hero banner with background image
+- Navigation to all exam sections
+- Bootstrap-based responsive layout
+- Google Analytics integration
+
+#### 2. **Exam Sections**
+Each exam folder contains:
+- **Mock Tests**: Numbered HTML files (MOCK-1.html, etc.)
+- **Styling**: Local CSS for exam-specific appearance
+- **Scripts**: Timer controls and interactive elements
+- **Assets**: Images, videos, and supplementary materials
+
+#### 3. **Shared Assets**
+- **CSS**: Modular stylesheets for different functionalities
+- **JavaScript**: Reusable components and utilities
+- **Images**: Logos, icons, and UI graphics
+- **Fonts**: Custom typography for branding
+
+#### 4. **Content Organization**
+- **Previous Year Papers**: Organized by exam type and year
+- **PDF Resources**: Downloadable study materials
+- **Video Content**: Tutorial videos for each exam type
+- **Archive**: Legacy versions for reference
+
+---
+
+## 🎯 Features & Functionality
+
+### Core Features
+1. **Mock Test System**
+   - Timed tests with countdown timers
+   - Multiple mock versions per exam type
+   - Interactive question interfaces
+   - Result tracking and feedback
+
+2. **Multimedia Content**
+   - Video tutorials for WAT, TAT, PPDT
+   - Image-based PPDT tests
+   - PDF downloads for offline study
+
+3. **Practice Sections**
+   - OIR practice questions
+   - Interactive learning modules
+   - Progressive difficulty levels
+
+4. **Resource Library**
+   - Previous year question papers
+   - Study guides and tips
+   - Reference materials
+
+### Technical Features
+- **Responsive Design**: Mobile-friendly across devices
+- **Progressive Enhancement**: Works without JavaScript (basic functionality)
+- **SEO Optimized**: Structured content with sitemap
+- **Performance Focused**: CDN resources and optimized assets
+- **Accessibility**: Semantic HTML and keyboard navigation
+
+---
+
+## 🚀 Development & Contribution Guide
+
+### Prerequisites
+- **Web Browser**: Modern browser with JavaScript enabled
+- **Text Editor**: VS Code, Sublime Text, or any HTML editor
+- **HTTP Server**: For local development (Python/Node.js built-in)
+- **Git**: For version control and collaboration
+
+### Local Development Setup
+
+#### Method 1: Python HTTP Server (Recommended)
 ```bash
+# Navigate to project root
+cd /path/to/ssb.colonelvyas.org
+
+# Start server on port 8000
+python -m http.server 8000
+
+# Access at: http://localhost:8000
+```
+
+#### Method 2: Node.js HTTP Server
+```bash
+# Install globally (one-time)
 npm install -g http-server
+
+# Start server
 http-server -p 8000
 ```
 
+#### Method 3: VS Code Live Server Extension
+- Install "Live Server" extension
+- Right-click `index.html` → "Open with Live Server"
+
+### Development Workflow
+
+#### 1. **Understanding the Codebase**
+- **HTML Structure**: Each page is standalone with consistent header/footer
+- **CSS Organization**: Global styles in `assets/css/`, local styles per exam
+- **JavaScript**: jQuery-based interactions, timer controls
+- **Assets**: Shared resources in `assets/`, exam-specific in local folders
+
+#### 2. **Adding New Content**
+
+##### Adding a Mock Test
+```bash
+# 1. Choose exam folder (e.g., TAT/, WAT/)
+# 2. Create new HTML file: MOCK-7.html
+# 3. Copy structure from existing mock
+# 4. Update content and questions
+# 5. Add to sitemap.txt
+```
+
+##### Adding CSS Styles
+```bash
+# For global changes: assets/css/
+# For exam-specific: [EXAM]/css-file.css
+```
+
+##### Adding JavaScript
+```bash
+# Global functions: assets/js/
+# Exam-specific: [EXAM]/ folder
+```
+
+#### 3. **Code Standards**
+- **HTML**: Semantic markup, proper indentation
+- **CSS**: Modular classes, responsive design
+- **JavaScript**: jQuery best practices, error handling
+- **Naming**: Consistent file/folder naming (MOCK-1.html, etc.)
+
+#### 4. **Testing Checklist**
+- [ ] Responsive design on mobile/tablet/desktop
+- [ ] JavaScript functionality (timers, interactions)
+- [ ] Cross-browser compatibility
+- [ ] Links and navigation working
+- [ ] Images and assets loading
+- [ ] Form submissions (if any)
+
+### Contribution Guidelines
+
+#### For Contributors
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/new-mock-test`
+3. **Make** your changes following code standards
+4. **Test** locally using HTTP server
+5. **Commit** with descriptive messages
+6. **Push** to your fork
+7. **Create** a Pull Request
+
+#### Content Addition Guidelines
+- **Mock Tests**: Follow existing format and numbering
+- **Resources**: Place in appropriate folders (PDF/, videos/)
+- **Styling**: Maintain consistent design language
+- **Documentation**: Update README for new features
+
+#### Code Review Process
+- All changes reviewed for quality and consistency
+- Testing required before merge
+- Documentation updates mandatory
+
 ---
 
-## 🛠 Development Workflow
+## 📊 Analytics & Tracking
 
-- **Editing HTML/CSS/JS**: Use your preferred editor to modify files in the respective directories.
-- **Adding tests or papers**: Place new HTML pages under the appropriate exam folder (e.g., `OIR/`, `PPDT/`), and include any corresponding CSS/JS assets.
-- **Updating assets**: Shared styles and scripts live in `assets/`.
+### Google Analytics Integration
+- **Tracking ID**: G-V2HSPHWHZH
+- **Purpose**: User behavior analysis and site improvement
+- **Implementation**: gtag.js loaded asynchronously on all pages
 
-> This project doesn't use a build system; changes are reflected immediately by reloading the page in your browser.
-
----
-
-## 📝 Tips & Notes
-
-- The site uses Bootstrap for basic styling (`vendor/bootstrap/css/bootstrap.min.css`).
-- jQuery is included via `vendor/jquery/` files.
-- Some pages load custom timer or countdown scripts (`jquery-countdown-timer-control.js`).
-- The `preloader` element shows a simple loading animation on page load.
+### Performance Monitoring
+- **Page Load Times**: Optimized for fast loading
+- **Resource Usage**: CDN for external libraries
+- **Mobile Performance**: Responsive design considerations
 
 ---
 
-## ✅ Summary
+## 🔧 Maintenance & Updates
 
-To run or test the project:
-1. Serve the directory over HTTP (e.g., Python's `http.server`).
-2. Open it in your browser at the specified port.
+### Regular Maintenance Tasks
+- **Content Updates**: Add new mock tests quarterly
+- **Dependency Updates**: Keep Bootstrap/jQuery current
+- **SEO Optimization**: Update meta tags and sitemap
+- **Bug Fixes**: Monitor and fix reported issues
 
-Feel free to expand this README with more project-specific documentation or contribution guidelines as the project evolves.
+### Backup & Deployment
+- **Git Repository**: Primary source control
+- **Static Hosting**: Deployed on web server
+- **CDN**: Assets served via content delivery network
+
+### Future Enhancements
+- **Database Integration**: For user progress tracking
+- **User Accounts**: Personalized learning paths
+- **Mobile App**: Native application development
+- **AI Features**: Intelligent question generation
 
 ---
 
-*Generated by GitHub Copilot (Raptor mini)*
+## 📞 Support & Contact
+
+### For Users
+- **Website**: [ssb.colonelvyas.org](https://ssb.colonelvyas.org)
+- **Issues**: Report bugs via GitHub Issues
+- **Feedback**: Use repository discussions
+
+### For Developers
+- **Documentation**: This README and inline code comments
+- **Code Style**: Follow existing patterns
+- **Questions**: Open GitHub Issues with "question" label
+
+---
+
+## 📜 License & Attribution
+
+### License
+This project is open source. See LICENSE file for details.
+
+### Attribution
+- **Author**: Ravil Patel
+- **Contributors**: Community contributors welcome
+- **Libraries**: Bootstrap, jQuery, Font Awesome (their respective licenses)
+
+---
+
+## 🎉 Acknowledgments
+
+Special thanks to:
+- Defence community for feedback and support
+- Open source community for tools and libraries
+- Contributors for improving the platform
+
+---
+
+*This README provides comprehensive guidance for understanding, developing, and contributing to SSB ColonelVyas.org. The platform continues to evolve with community input and technological advancements.*
+
