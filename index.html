@@ -1,366 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2HSPHWHZH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-V2HSPHWHZH');
-  </script>
-
-  <link rel="shortcut icon" href="assets/images/logo-icon.png" type="">
-  <link href="assets/images/logo-icon.png" rel="apple-touch-icon">
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="DOSPDP - Free SSB Mock Tests, OIR, TAT, WAT, SRT, PPDT. Defence Oriented SSB & Personality Development Program.">
-  <meta name="author" content="Ravil Patel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DOSPDP SSB Preparation Portal by Col Vyas (Retd.) - Comprehensive guidance for Services Selection Board aspirants.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>DOSPDP - SSB Preparation Portal | By Col Vyas (Retd.)</title>
+  
+  <!-- Slab Serif Typography: Roboto Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-
-  <title>SSB Mock Tests - Free Training | DOSPDP</title>
-
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/animated.css">
-  <link rel="stylesheet" href="assets/css/enhanced-style.css">
-  <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
-
-  <style>
-    /* Custom Background Integration */
-    .main-banner {
-      position: relative;
-      /* Using a linear-gradient overlay (60% opacity) so the text pops against the white uniforms */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0,0,0.15 )), url('images/3.jpeg');
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      padding: 180px 0px 120px 0px;
-      color: #fff;
-    }
-
-    .main-banner h2 {
-      color: #ffffff ;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-
-    .info-stat h6 {
-      color: #eee;
-    }
-
-    .info-stat h4 {
-      color: #fff ;
-    }
-
-    /* Ensuring the "Free Badge" stands out */
-    .free-badge {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(5px);
-      display: inline-block;
-      padding: 5px 15px;
-      border-radius: 50px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
-
 <body>
+  <!-- App Container -->
+  <div class="app-container">
+    
+    <!-- Mobile Sidebar Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="Main Navigation">
+      <!-- Sidebar Header / Logo -->
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo-container" aria-label="DOSPDP Home">
+          <img src="assets/images/logo.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-light">
+          <img src="assets/images/logo_dark.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-dark">
+        </a>
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar navigation">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
-    </div>
-  </div>
 
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.3s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <a href="https://ssb.colonelvyas.org/" class="logo">
-              <h4><img src="assets/images/logo-icon.png" alt="DOSPDP Logo"></h4>
+      <!-- Navigation Menu Groups -->
+      <nav class="sidebar-nav">
+        <!-- Dashboard -->
+        <div class="nav-group">
+          <a href="index.html" class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+        </div>
+
+        <!-- LEARN Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">LEARN</span>
+          <a href="courses.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Courses</span>
+          </a>
+          <a href="video-recommendation.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+            <span>Video Recommendation</span>
+          </a>
+        </div>
+
+        <!-- PRACTICE Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">PRACTICE</span>
+          <a href="mock.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+              <path d="M9 14l2 2 4-4"></path>
+            </svg>
+            <span>Mock Tests</span>
+          </a>
+        </div>
+
+        <!-- TOOLS Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">TOOLS</span>
+          <a href="swot.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <path d="M3 9h18"></path>
+              <path d="M9 21V9"></path>
+            </svg>
+            <span>SWOT Analysis</span>
+          </a>
+          <a href="ssb-readiness.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <span>SSB Readiness Test</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      
+      <!-- Top Sticky Header -->
+      <header class="top-header">
+        <div class="header-left">
+          <!-- Mobile Menu Hamburger Button -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open sidebar menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <h1 class="page-title">Dashboard</h1>
+        </div>
+
+        <div class="header-right">
+          <!-- Theme Switcher (Light / Dark) -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+            <!-- Moon Icon (Light Mode Default) -->
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun Icon (Hidden in Light Mode) -->
+            <svg class="sun-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="5" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Scrollable Dashboard Content -->
+      <main class="main-content">
+
+        <!-- Free Courses Section -->
+        <section id="courses" class="courses-section" aria-labelledby="coursesTitle">
+          <div class="section-header">
+            <h2 id="coursesTitle" class="section-title">Free Courses</h2>
+            <a href="courses.html" class="view-all-link">View all</a>
+          </div>
+
+          <div class="courses-container">
+            <!-- Course 1: The Services Selection Board: Game or Gamble -->
+            <article class="course-card course-card-featured">
+              <div class="course-thumb-wrap">
+                <img src="assets/images/course_1.png" alt="The Services Selection Board: Game or Gamble" class="course-thumb-img" loading="lazy">
+                <span class="course-badge-free">FREE</span>
+              </div>
+              <div class="course-info">
+                <div class="course-badge-row">
+                  <span class="badge-tag badge-foundation">Foundation</span>
+                  <span class="badge-tag badge-level">11 Lessons &amp; Activities</span>
+                </div>
+                <h3 class="course-title">The Services Selection Board: Game or Gamble</h3>
+                <p class="course-summary-text">An introduction to the comprehensive 5-day selection process and the 15 OLQs.</p>
+                <div class="course-meta">
+                  <span>Self Paced</span>
+                  <span class="meta-dot">•</span>
+                  <span>75 Mins</span>
+                  <span class="meta-dot">•</span>
+                  <span>11 Modules</span>
+                </div>
+                <a href="courses/ssb-game-or-gamble.html" class="btn-pill-navy start-course-direct-btn">
+                  <span>Start Course</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Course 2: What SSB wants from you? -->
+            <article class="course-card course-card-featured">
+              <div class="course-thumb-wrap">
+                <img src="assets/images/course_1.png" alt="What SSB wants from you?" class="course-thumb-img" loading="lazy">
+                <span class="course-badge-free">FREE</span>
+              </div>
+              <div class="course-info">
+                <div class="course-badge-row">
+                  <span class="badge-tag badge-foundation">Foundation</span>
+                  <span class="badge-tag badge-level">6 Lessons &amp; Activities</span>
+                </div>
+                <h3 class="course-title">What SSB wants from you?</h3>
+                <p class="course-summary-text">Understanding Manasa-Vacha-Karma in the context of the 5-day SSB procedure.</p>
+                <div class="course-meta">
+                  <span>Self Paced</span>
+                  <span class="meta-dot">•</span>
+                  <span>46 Mins</span>
+                  <span class="meta-dot">•</span>
+                  <span>6 Modules</span>
+                </div>
+                <a href="courses/what-ssb-wants-from-you.html" class="btn-pill-navy start-course-direct-btn">
+                  <span>Start Course</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Free Mock Tests Section -->
+        <section id="mock-tests" class="mock-tests-section" aria-labelledby="mockTestsTitle">
+          <div class="section-header">
+            <h2 id="mockTestsTitle" class="section-title">Free Mock Tests</h2>
+            <a href="mock.html" class="view-all-link">View all</a>
+          </div>
+
+          <div class="mock-tests-grid">
+            
+            <!-- 1. OIR TEST -->
+            <article class="mock-test-card">
+              <div class="test-icon-box" aria-hidden="true">
+                <img src="assets/images/oir.png" alt="OIR Test" class="test-icon-img" loading="lazy">
+              </div>
+              <div class="test-details">
+                <h3 class="test-title">OIR TEST</h3>
+                <p class="test-subtitle">Officers Intelligence Rating Test</p>
+                <a href="OIR.html" class="btn-pill-sm">
+                  <span>Start Test</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. PP&DT -->
+            <article class="mock-test-card">
+              <div class="test-icon-box" aria-hidden="true">
+                <img src="assets/images/ppdt.png" alt="PP&DT" class="test-icon-img" loading="lazy">
+              </div>
+              <div class="test-details">
+                <h3 class="test-title">PP&DT</h3>
+                <p class="test-subtitle">Picture Perception &amp; Discussion Test</p>
+                <a href="PPDT.html" class="btn-pill-sm">
+                  <span>Start Test</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. WAT -->
+            <article class="mock-test-card">
+              <div class="test-icon-box" aria-hidden="true">
+                <img src="assets/images/wat.png" alt="WAT" class="test-icon-img" loading="lazy">
+              </div>
+              <div class="test-details">
+                <h3 class="test-title">WAT</h3>
+                <p class="test-subtitle">Word Association Test</p>
+                <a href="WAT.html" class="btn-pill-sm">
+                  <span>Start Test</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. SRT -->
+            <article class="mock-test-card">
+              <div class="test-icon-box" aria-hidden="true">
+                <img src="assets/images/srt.png" alt="SRT" class="test-icon-img" loading="lazy">
+              </div>
+              <div class="test-details">
+                <h3 class="test-title">SRT</h3>
+                <p class="test-subtitle">Situation Reaction Test</p>
+                <a href="SRT.html" class="btn-pill-sm">
+                  <span>Start Test</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. TAT -->
+            <article class="mock-test-card">
+              <div class="test-icon-box" aria-hidden="true">
+                <img src="assets/images/tat.png" alt="TAT" class="test-icon-img" loading="lazy">
+              </div>
+              <div class="test-details">
+                <h3 class="test-title">TAT</h3>
+                <p class="test-subtitle">Thematic Apperception Test</p>
+                <a href="TAT.html" class="btn-pill-sm">
+                  <span>Start Test</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Video Recommendations Section -->
+        <section id="video-recommendations" class="video-recommendations-section" aria-labelledby="videoRecommendationsTitle">
+          <div class="section-header">
+            <h2 id="videoRecommendationsTitle" class="section-title">Video Recommendations</h2>
+            <a href="video-recommendation.html" class="view-all-link">View all</a>
+          </div>
+
+          <div class="video-grid">
+            
+            <!-- Video 1 -->
+            <a href="https://www.youtube.com/watch?v=7rD4dF-tY_Y&list=PLopRkI8F-q3n5DdLU7tNdRtseIOTK4eSu&index=1" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="video-card" 
+               data-category="stage-1"
+               aria-label="The Real SSB Experience | Part 2 :SSB COMPUTER STAGE 01 (Opens in new tab)">
+              <div class="video-thumb-container">
+                <img src="https://img.youtube.com/vi/7rD4dF-tY_Y/hqdefault.jpg" alt="The Real SSB Experience | Part 2 :SSB COMPUTER STAGE 01" class="video-thumb-img" loading="lazy">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+                <span class="video-duration-badge">YouTube ↗</span>
+              </div>
+              <div class="video-body">
+                <span class="video-tag">STAGE-1 SCREENING</span>
+                <h3 class="video-title">The Real SSB Experience | Part 2 :SSB COMPUTER STAGE 01</h3>
+                <p class="video-desc">Official walkthrough of the computerized Stage 01 screening test experience and candidate testing procedures.</p>
+                <div class="video-instructor">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Credit: Join Indian Army</span>
+                </div>
+              </div>
             </a>
-            <ul class="nav" id="mainNav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#mock">Mock Tests</a></li>
-              <li class="scroll-to-section"><a href="#free-ssb-training">Free Training</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org" target="_blank">About Us</a></li>
-              <li class="scroll-to-section"><a href="https://colonelvyas.org/contact" target="_blank">Contact</a></li>
-              <!-- <li>
-                <div class="main-blue-button"><a href="#mock">Start Training</a></div>
-              </li> -->
-            </ul>
-            <a class="menu-trigger" id="menuTrigger"><span>Menu ☰</span></a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="0.6s" data-wow-delay="0.1s">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-10 offset-lg-1 text-center"> <div class="left-content header-text wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.2s">
-
-            <div class="free-badge">
-              <span style="color: #000000; font-size:19px;">★ 100% Free — No Login Required</span>
-            </div>
-
-            <h2 style="font-size: 48px; margin-bottom: 30px;">Defence Oriented SSB &amp; Personality Development Program</h2>
-
-            <div class="row g-3 mb-5 justify-content-center">
-              <div class="col-md-3">
-                <div class="info-stat">
-                  <h6>Available Free Test</h6>
-                  <h4>20+</h4>
+            <!-- Video 2 -->
+            <a href="https://www.youtube.com/watch?v=6RlSAazDnXY&list=PLopRkI8F-q3n5DdLU7tNdRtseIOTK4eSu&index=2" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="video-card" 
+               data-category="stage-1"
+               aria-label="The Real SSB Experience | Part 1 : SSB STAGE 01 (Opens in new tab)">
+              <div class="video-thumb-container">
+                <img src="https://img.youtube.com/vi/6RlSAazDnXY/hqdefault.jpg" alt="The Real SSB Experience | Part 1 : SSB STAGE 01" class="video-thumb-img" loading="lazy">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+                <span class="video-duration-badge">YouTube ↗</span>
+              </div>
+              <div class="video-body">
+                <span class="video-tag">STAGE-1 SCREENING</span>
+                <h3 class="video-title">The Real SSB Experience | Part 1 : SSB STAGE 01</h3>
+                <p class="video-desc">Complete overview of SSB Stage 01 screening procedures, documentation, and candidate reporting experience.</p>
+                <div class="video-instructor">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Credit: Join Indian Army</span>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="info-stat">
-                  <h6>Tests</h6>
-                  <h4>OIR · SRT · WAT · TAT · PPDT</h4>
+            </a>
+
+            <!-- Video 3 -->
+            <a href="https://www.youtube.com/watch?v=qCdLyEwdEK4&list=PLopRkI8F-q3n5DdLU7tNdRtseIOTK4eSu&index=3" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="video-card" 
+               data-category="psychology"
+               aria-label="The Real SSB Experience | Part 3 : SSB PSYCHOLOGY TEST (Opens in new tab)">
+              <div class="video-thumb-container">
+                <img src="https://img.youtube.com/vi/qCdLyEwdEK4/hqdefault.jpg" alt="The Real SSB Experience | Part 3 : SSB PSYCHOLOGY TEST" class="video-thumb-img" loading="lazy">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+                <span class="video-duration-badge">YouTube ↗</span>
+              </div>
+              <div class="video-body">
+                <span class="video-tag">PSYCHOLOGY</span>
+                <h3 class="video-title">The Real SSB Experience | Part 3 : SSB PSYCHOLOGY TEST</h3>
+                <p class="video-desc">Detailed guide to the SSB Psychology Test battery, including TAT, WAT, SRT, and Self-Description assessment.</p>
+                <div class="video-instructor">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Credit: Join Indian Army</span>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="info-stat">
-                  <h6>Recommendations</h6>
-                  <h4>25+</h4>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- Latest from Blog Section (Temporarily commented out)
+        <section id="blogs" class="blogs-section" aria-labelledby="blogsTitle">
+          <div class="section-header">
+            <h2 id="blogsTitle" class="section-title">Latest from Blog</h2>
+            <a href="blogs.html" class="view-all-link">View all</a>
+          </div>
+
+          <div class="blogs-grid">
+            
+            [Blog 1]
+            <article class="blog-card">
+              <div class="blog-thumb-wrap">
+                <img src="assets/images/blog/blog-1.jpg" alt="SSB Aspirant in Hills" class="blog-thumb-img" loading="lazy">
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">5 Qualities Every SSB Aspirant Must Develop</h3>
+                <div class="blog-meta">
+                  <span>May 12, 2024</span>
+                  <span class="meta-dot">•</span>
+                  <span>5 min read</span>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="d-flex justify-content-center flex-wrap gap-3">
-              <div class="main-green-button scroll-to-section">
-                <a href="#mock">Start Your Training →</a>
+            [Blog 2]
+            <article class="blog-card">
+              <div class="blog-thumb-wrap">
+                <img src="assets/images/blog/blog-2.jpg" alt="Study desk with books" class="blog-thumb-img" loading="lazy">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="mock" class="our-services section">
-    <div class="container">
-      <div class="section-heading wow bounceIn" data-wow-duration="0.8s">
-        <h6>Mock Tests</h6>
-        <h2>Appear for Tests with <span>Proper Solutions!</span></h2>
-      </div>
-    </div>
-
-    <div class="mock-grid wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-
-      <div class="mock-card">
-        <div class="mock-icon">
-          <img src="assets/images/service-icon-01.png" alt="OIR Test Icon">
-        </div>
-        <h4>OIR Test</h4>
-        <p class="mock-subtitle">Officers Intelligence Rating Test</p>
-        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>Practice & Mock</strong> Available
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-          <!-- <div class="main-green-button">
-            <a href="OIR/Practice/OIR-practice.html" style="background-color: #c9a84c; color: #1a3017; font-weight: 700;">Start
-              Practice Mode →</a>
-          </div> -->
-          <div class="main-green-button">
-            <a href="OIR.html">Start Mock Test →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="mock-card">
-        <div class="mock-icon">
-          <img src="assets/images/service-icon-05.png" alt="PPDT Icon">
-        </div>
-        <h4>PPDT</h4>
-        <p class="mock-subtitle">Picture Perception and Description Test</p>
-        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>6</strong> Tests Available</div>
-        <div class="main-green-button">
-          <a href="PPDT.html">Start PPDT →</a>
-        </div>
-      </div>
-
-      <div class="mock-card">
-        <div class="mock-icon">
-          <img src="assets/images/service-icon-02.png" alt="TAT Icon">
-        </div>
-        <h4>TAT</h4>
-        <p class="mock-subtitle">Thematic Apperception Test</p>
-        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>5</strong> Tests Available</div>
-        <div class="main-green-button">
-          <a href="TAT.html">Start TAT →</a>
-        </div>
-      </div>
-
-      <div class="mock-card">
-        <div class="mock-icon">
-          <img src="assets/images/service-icon-03.png" alt="WAT Icon">
-        </div>
-        <h4>WAT</h4>
-        <p class="mock-subtitle">Word Association Test</p>
-        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>5</strong> Tests Available</div>
-        <div class="main-green-button">
-          <a href="WAT.html">Start WAT →</a>
-        </div>
-      </div>
-
-      <div class="mock-card">
-        <div class="mock-icon">
-          <img src="assets/images/service-icon-04.png" alt="SRT Icon">
-        </div>
-        <h4>SRT</h4>
-        <p class="mock-subtitle">Situation Reaction Test</p>
-        <div class="test-count"><i class="fa fa-file-text-o"></i>&nbsp; <strong>2</strong> Tests Available</div>
-        <div class="main-green-button">
-          <a href="SRT.html">Start SRT →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="AboutSSB" class="about-us section">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5">
-          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <img src="assets/images/about-left-image.png" alt="About SSB - Staff Selection Board">
-          </div>
-        </div>
-        <div class="col-lg-7 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="section-heading text-start mb-4">
-            <h6>SSB — Services Selection Board</h6>
-            <h2>Best Place for Free <em>Training</em> &amp; Personality Development for <span>SSB</span></h2>
-          </div>
-
-          <div class="row g-3 mb-4">
-            <div class="col-4">
-              <div class="about-item">
-                <h4>25+</h4>
-                <h6>SSB Recomendations</h6>
+              <div class="blog-info">
+                <h3 class="blog-title">How to Prepare for OIR Test Effectively</h3>
+                <div class="blog-meta">
+                  <span>May 8, 2024</span>
+                  <span class="meta-dot">•</span>
+                  <span>6 min read</span>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="about-item">
-                <h4>1000+</h4>
-                <h6>Students</h6>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="about-item">
-                <h4>250+</h4>
-                <h6>Free Webinars</h6>
-              </div>
-            </div>
-          </div>
+            </article>
 
-          <p>
-            <a rel="dofollow" href="https://colonelvyas.org" target="_blank"><strong>DOSPDP</strong></a> is a Non-Profit
-            Organisation focused on providing Free SSB Training for youth willing to join the Elite Armed Forces of
-            India. SSB is a 5-day procedure after the written examination is cleared — involving Screening Tests, Ground
-            Training Tasks, Interviews, Group Discussions, and more.
-          </p>
+            [Blog 3]
+            <article class="blog-card">
+              <div class="blog-thumb-wrap">
+                <img src="assets/images/blog/blog-3.jpg" alt="Writing in journal" class="blog-thumb-img" loading="lazy">
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">PP&DT: Tips to Structure Your Story</h3>
+                <div class="blog-meta">
+                  <span>May 3, 2024</span>
+                  <span class="meta-dot">•</span>
+                  <span>4 min read</span>
+                </div>
+              </div>
+            </article>
 
-          <div class="main-green-button">
-            <a href="ssb-5days.pdf" rel="dofollow" target="_blank">Learn More in Detail →</a>
+            [Blog 4]
+            <article class="blog-card">
+              <div class="blog-thumb-wrap">
+                <img src="assets/images/blog/blog-4.jpg" alt="Military cadets in formation" class="blog-thumb-img" loading="lazy">
+              </div>
+              <div class="blog-info">
+                <h3 class="blog-title">From SSB to Success: Real Life Lessons</h3>
+                <div class="blog-meta">
+                  <span>Apr 28, 2024</span>
+                  <span class="meta-dot">•</span>
+                  <span>7 min read</span>
+                </div>
+              </div>
+            </article>
+
           </div>
+        </section>
+        -->
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Interactive Test / Course Modal -->
+  <div class="modal-overlay" id="portalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-header">
+        <span class="modal-badge" id="modalCategoryBadge">MOCK ASSESSMENT</span>
+        <h3 class="modal-title" id="modalTitle">Test Title</h3>
+      </div>
+      
+      <p class="modal-body" id="modalDescription">Detailed test instructions and structure.</p>
+      
+      <div class="modal-stats" id="modalStatsGrid">
+        <div class="stat-item">
+          <span class="stat-value" id="modalStatDuration">30 Mins</span>
+          <span class="stat-label">Duration</span>
         </div>
+        <div class="stat-item">
+          <span class="stat-value" id="modalStatQuestions">50</span>
+          <span class="stat-label">Format</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="modalStatMode">Online</span>
+          <span class="stat-label">Mode</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" id="modalCancelBtn">Cancel</button>
+        <button class="btn-primary-action" id="modalConfirmBtn">Begin Assessment</button>
       </div>
     </div>
   </div>
 
-  <div id="free-ssb-training">
-    <div class="container">
-      <div class="section-heading wow bounceIn" data-wow-duration="0.8s">
-        <h6>Enroll Today</h6>
-        <h2>Free SSB Training</h2>
-        <h3><strong>The Best That You Can Get!</strong></h3>
-      </div>
-      <div class="free">
-        <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <p>To register and get daily updates for SSB, follow the link below. We help you with the best educators and
-            SSB Experts — completely free, with no hidden charges.</p>
-          <p>We just hope you share our mission with everyone you can! 💚</p>
-          <br>
-          <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:12px;">
-            <a href="http://colonelvyas.org/registration" target="_blank"><button class="btn-ravil">Register
-                Now</button></a>
-            <a href="#mock"><button class="btn-ravil">Attempt Mock Test</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Action performed successfully!</span>
   </div>
 
-
-  <div class="footer-basic">
-    <footer>
-      <div class="social">
-        <a href="http://facebook.colonelvyas.org" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a href="http://insta.colonelvyas.org" title="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="http://twitter.colonelvyas.org" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="http://Youtube.colonelvyas.org" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-      </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://colonelvyas.org">Main Site</a></li>
-        <li class="list-inline-item"><a href="#mock">Mock Tests</a></li>
-        <li class="list-inline-item"><a href="https://colonelvyas.org/registration">Register Free</a></li>
-        <li class="list-inline-item"><a href="https://colonelvyas.org/contact">Contact Us</a></li>
-      </ul>
-      <p class="copyright">DOSPDP — Defence Oriented SSB &amp; Personality Development Program &copy;
-        <script>document.write(new Date().getFullYear())</script>
-      </p>
-    </footer>
-  </div>
-
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-  <script>
-    // Mobile menu toggle
-    document.getElementById('menuTrigger').addEventListener('click', function () {
-      document.getElementById('mainNav').classList.toggle('active');
-    });
-
-    // Hide preloader
-    window.addEventListener('load', function () {
-      var preloader = document.getElementById('js-preloader');
-      if (preloader) {
-        preloader.style.opacity = '0';
-        setTimeout(function () { preloader.style.display = 'none'; }, 500);
-      }
-    });
-
-    // Active nav link on scroll
-    var sections = document.querySelectorAll('div[id], section[id]');
-    var navLinks = document.querySelectorAll('.nav li a');
-    window.addEventListener('scroll', function () {
-      var scrollPos = window.scrollY + 100;
-      sections.forEach(function (section) {
-        if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
-          navLinks.forEach(function (link) {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + section.id) link.classList.add('active');
-          });
-        }
-      });
-    });
-  </script>
-
+  <!-- Application Logic JavaScript -->
+  <script src="assets/js/app.js"></script>
 </body>
-
 </html>

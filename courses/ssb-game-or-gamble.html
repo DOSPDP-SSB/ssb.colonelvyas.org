@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Services Selection Board: Game or Gamble - Foundation Course by Col Vyas (Retd.) | DOSPDP">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>The Services Selection Board: Game or Gamble | DOSPDP</title>
+  
+  <!-- Slab Serif Typography: Roboto Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/course-player.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+</head>
+<body class="player-body">
+
+  <div class="player-wrapper">
+    
+    <!-- Top Bar -->
+    <header class="player-header">
+      <div class="player-header-left">
+        <a href="../index.html" class="brand-logo-container player-brand-logo" aria-label="DOSPDP Home">
+          <img src="../assets/images/logo.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-light">
+          <img src="../assets/images/logo_dark.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-dark">
+        </a>
+        <div class="player-divider"></div>
+        <a href="../courses.html" class="player-back-btn" title="Back to Courses">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Courses</span>
+        </a>
+        <div class="player-divider"></div>
+        <div class="player-course-meta-header">
+          <span class="player-course-badge">Foundation</span>
+          <h1 class="player-course-title">The Services Selection Board: Game or Gamble</h1>
+        </div>
+      </div>
+
+      <div class="player-header-right">
+        <!-- Progress Counter -->
+        <div class="player-progress-widget">
+          <div class="progress-labels">
+            <span class="progress-count" id="headerProgressCount">0/11 Done</span>
+            <span class="progress-percent" id="headerProgressPercent">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="headerProgressBar" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar Toggle -->
+        <button class="player-icon-btn" id="toggleSidebarBtn" title="Toggle Syllabus" aria-label="Toggle Syllabus">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="player-icon-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="player-top-line">
+      <div class="player-top-line-fill" id="topProgressLine" style="width: 0%;"></div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="player-main-layout" id="playerMainLayout">
+      
+      <!-- Syllabus Sidebar -->
+      <aside class="player-sidebar" id="playerSidebar" aria-label="Course Syllabus">
+        
+        <div class="sidebar-course-card">
+          <div class="sidebar-thumb-wrap">
+            <img src="../assets/images/course_1.png" alt="Course Thumbnail" class="sidebar-thumb-img">
+          </div>
+          <div class="sidebar-course-details">
+            <div class="sidebar-course-name">SSB: Game or Gamble</div>
+            <div class="sidebar-course-desc">Foundation • 11 Modules</div>
+          </div>
+        </div>
+
+        <div class="syllabus-header">
+          <span class="syllabus-title">Curriculum</span>
+          <span class="syllabus-count">11 Units</span>
+        </div>
+
+        <nav class="syllabus-list" id="syllabusList">
+          
+          <button class="syllabus-item active" data-unit-index="0" id="syllabusNav-0">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">1. Introduction</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="1" id="syllabusNav-1">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">2. Manasa-Vacha-Karma</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="2" id="syllabusNav-2">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">3. How to Think? (Case Study)</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="3" id="syllabusNav-3">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">4. The Correct Solution</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="4" id="syllabusNav-4">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">5. Traits of Officer</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="5" id="syllabusNav-5">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Video</span>
+                <span class="unit-duration">• 27 min</span>
+              </div>
+              <div class="syllabus-item-title">6. 5 Days of SSB</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="6" id="syllabusNav-6">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Tip</span>
+                <span class="unit-duration">• 1 min</span>
+              </div>
+              <div class="syllabus-item-title">7. The Hard Truth</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="7" id="syllabusNav-7">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">8. Officer Like Quality</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="8" id="syllabusNav-8">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Video</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">9. Officer Like Quality Video</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="9" id="syllabusNav-9">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 2 min</span>
+              </div>
+              <div class="syllabus-item-title">10. Conclusion &amp; Next Steps</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="10" id="syllabusNav-10">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Assessment</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">11. Assessment Check</div>
+            </div>
+          </button>
+
+        </nav>
+
+        <div class="sidebar-footer-box">
+          <button class="btn-reset-course" id="resetProgressBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span>Reset Progress</span>
+          </button>
+        </div>
+      </aside>
+
+      <div class="player-sidebar-backdrop" id="playerSidebarBackdrop"></div>
+
+      <!-- Main Stage Viewport -->
+      <main class="player-viewport" id="playerViewport">
+        
+        <div class="viewport-inner" id="viewportInner">
+          
+          <!-- UNIT 0: INTRODUCTION -->
+          <section class="lesson-stage active" id="unitStage-0" data-unit="0">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>3 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 1 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Introduction</h1>
+              <p class="lesson-lead-summary">What is the SSB and how does it evaluate candidates?</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  The <strong>Services Selection Board (SSB)</strong> is the official evaluation authority and selection process for candidates aspiring to become commissioned officers in the Indian Armed Forces (Indian Army, Navy, Air Force, and Coast Guard).
+                </p>
+
+                <p class="paragraph-text">
+                  In this course we shall learn why SSB is difficult. We shall have few exercises, reading lessons and Videos to be watched. At the end, there is recommended Video Series provided officially by Join Indian Army on YouTube.
+                </p>
+
+                <div class="simple-callout">
+                  <strong>Key Takeaway:</strong> SSB is a 5-day comprehensive testing procedure designed to assess candidates across psychological, behavioral, and practical leadership dimensions.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 1: MANASA-VACHA-KARMA -->
+          <section class="lesson-stage" id="unitStage-1" data-unit="1">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>3 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 2 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Manasa-Vacha-Karma</h1>
+              <p class="lesson-lead-summary">The 3D testing model and the 15 Officer-Like Qualities.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  The SSB does not seek a "perfect" candidate; rather, it looks for the right candidate who fits the requirements of the Armed Forces and possesses an optimal combination of key qualities.
+                </p>
+
+                <p class="paragraph-text">
+                  Candidate assessment revolves around 15 Officer-Like Qualities (OLQs), evaluated through the traditional Indian philosophy of personality assessment across three dimensions:
+                </p>
+
+                <h2 class="content-h2">The Three Dimensions of Assessment:</h2>
+
+                <div class="dim-simple-list">
+                  
+                  <div class="dim-simple-item">
+                    <div class="dim-simple-header">
+                      <span class="dim-simple-title">1. Manasa</span>
+                      <span class="dim-simple-subtitle">(What you think)</span>
+                    </div>
+                    <p class="dim-simple-body">
+                      Evaluated by the <strong>Psychologist</strong> through time-bound psychological tests (TAT, WAT, SRT, Self-Description) to observe subconscious thoughts, imagination, and natural reactions under pressure.
+                    </p>
+                  </div>
+
+                  <div class="dim-simple-item">
+                    <div class="dim-simple-header">
+                      <span class="dim-simple-title">2. Vacha</span>
+                      <span class="dim-simple-subtitle">(What you speak)</span>
+                    </div>
+                    <p class="dim-simple-body">
+                      Evaluated by the <strong>Interviewing Officer</strong> during a 40–45 minute one-on-one personal interview to assess honesty, self-awareness, clarity of goals, family values, and life history.
+                    </p>
+                  </div>
+
+                  <div class="dim-simple-item">
+                    <div class="dim-simple-header">
+                      <span class="dim-simple-title">3. Karma</span>
+                      <span class="dim-simple-subtitle">(What you do)</span>
+                    </div>
+                    <p class="dim-simple-body">
+                      Evaluated by the <strong>Group Testing Officer (GTO)</strong> through indoor and outdoor group/individual tasks to observe how you act, plan, communicate, and execute on the ground.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="simple-callout warning">
+                  <strong>The Alignment Rule:</strong> To be recommended, your thoughts, words, and actions must align seamlessly. If your Manasa shows high empathy in written psychological responses, but your Karma in GTO outdoor tasks shows self-centered or aggressive behavior toward group members, the contradiction will be caught.
+                </div>
+
+                <div class="simple-image-box">
+                  <img src="../assets/images/MVK.png" alt="Manasa-Vacha-Karma Triad" class="content-illustration-img">
+                  <div class="simple-image-caption">Manasa-Vacha-Karma Assessment Model</div>
+                </div>
+
+                <p class="paragraph-text">
+                  Passing the test isn't about excelling in just one technique; it requires proving that what you subconsciously think (Manasa), what you consciously speak (Vacha), and how you physically act (Karma) are identical.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 2: HOW TO THINK? (CASE STUDY) -->
+          <section class="lesson-stage" id="unitStage-2" data-unit="2">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>10 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 3 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">How to Think? (Case Study)</h1>
+              <p class="lesson-lead-summary">A practical case study on decision making and thought process.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  We will be working upon "How to Think?" in the upcoming few lessons. Please read the following content and based on the content, give answers to a few of the questions given below.
+                </p>
+
+                <div class="case-study-simple-box">
+                  <h3 class="case-study-heading">Situation: The Lost Wallet</h3>
+                  
+                  <div class="simple-image-box" style="margin: 16px 0 20px;">
+                    <img src="../assets/images/lost_purse.png" alt="Situation: The Lost Wallet / Purse" class="content-illustration-img">
+                    <div class="simple-image-caption">Situation: The Lost Wallet / Purse Scenario</div>
+                  </div>
+
+                  <p class="paragraph-text">
+                    It was around 2:15 AM on a quiet, dimly lit stretch of road just a kilometer away from my house when something on the pavement caught my eye. The road was rarely frequented by outsiders, mostly serving a tight-knit community of about six housing societies comprising roughly 120 houses. Crouching down, I picked up a lost wallet and flipped it open under the streetlamp to check for any identity proof.
+                  </p>
+
+                  <div class="case-inventory-tags">
+                    <span class="case-tag">₹8,500 Cash</span>
+                    <span class="case-tag">Aadhaar Card (Antriksh Patel)</span>
+                    <span class="case-tag">PAN Card</span>
+                    <span class="case-tag">SBI Credit Card</span>
+                    <span class="case-tag">ICICI Debit Card</span>
+                    <span class="case-tag">Amaya's Cafe Receipt</span>
+                  </div>
+
+                  <p class="paragraph-text" style="margin-top: 14px;">
+                    Unsure of the best way to return it, I sought advice, only to be met with a chaotic split of opinions:
+                  </p>
+
+                  <div class="opinions-simple-list">
+                    <div class="op-simple-item">
+                      <strong>Parents' Suggestion:</strong> Logically suggested handing it straight over to the police havildar who lives right next door to us.
+                    </div>
+                    <div class="op-simple-item">
+                      <strong>Laabhesh's Idea:</strong> Insisted the fastest route would be searching for Antriksh Patel on social media to send him a direct message.
+                    </div>
+                    <div class="op-simple-item">
+                      <strong>Mahek's Idea:</strong> Playing it completely by the book, urged me to take it directly to the local police station to file an official report.
+                    </div>
+                    <div class="op-simple-item">
+                      <strong>Rahil's Scheme:</strong> Elaborate scheme to pull out cash and documents, but leave the empty purse on the road with a written note: <em>"If you are the owner of this purse, prove your identity to me by calling 98989 89898 and collect your belongings from me."</em>
+                    </div>
+                  </div>
+
+                  <p class="paragraph-text" style="margin-top: 14px; font-weight: 600;">
+                    Standing there in the middle of the night with the wallet in my hand, I had to figure out which path was actually the right one to take.
+                  </p>
+                </div>
+
+                <h2 class="content-h2">Questions for Self-Reflection</h2>
+                <p class="paragraph-text">
+                  Okay, let us answer a few questions. It is recommended to take up a book and answer the below questions before reading the next section.
+                </p>
+
+                <div class="questions-simple-list">
+                  <div class="q-simple-item">
+                    <span class="q-num">1.</span>
+                    <span>What does your instinct say in this situation, what is appropriate course of action?</span>
+                  </div>
+                  <div class="q-simple-item">
+                    <span class="q-num">2.</span>
+                    <span>Are your parent's suggestions not valid? After all, you personally know the police havildar as he is your neighbour for so many years.</span>
+                  </div>
+                  <div class="q-simple-item">
+                    <span class="q-num">3.</span>
+                    <span>What are your thoughts about Laabhesh's idea? The road is lesser travelled, and high chances you might find "Antriksh Patel" on social media who lives in those 6 societies.</span>
+                  </div>
+                  <div class="q-simple-item">
+                    <span class="q-num">4.</span>
+                    <span>Submitting the purse in a police station is one of the most obvious responses in such case. But, should you get into police station and all? Are you with Mahek's idea?</span>
+                  </div>
+                  <div class="q-simple-item">
+                    <span class="q-num">5.</span>
+                    <span>Rahil's idea is a creative idea. What about this? Definitely the person who has lost it will for sure try to find it, and it will be easy to verify if the person is genuine or not by simply asking their Aadhar Number, PAN Number and what food he ate on that day.</span>
+                  </div>
+                </div>
+
+                <div class="scratchpad-simple">
+                  <div class="scratchpad-top">
+                    <span>Quick Notes / Your Thoughts (Auto-saved)</span>
+                    <span id="scratchpadSaveStatus">Auto-saved locally</span>
+                  </div>
+                  <textarea class="scratchpad-textarea" id="caseNotesInput" placeholder="Record your thoughts here before proceeding..."></textarea>
+                </div>
+
+                <div class="simple-callout alert">
+                  <strong>Action Required:</strong> Hopefully, you have answered all of them on your own and written somewhere. Please do it before reading the next section.
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- UNIT 3: THE CORRECT SOLUTION -->
+          <section class="lesson-stage" id="unitStage-3" data-unit="3">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>10 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 4 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">The Correct Solution</h1>
+              <p class="lesson-lead-summary">Decoding decision making biases and the human mind.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  Even I do not know the most appropriate solution, but together let's decode it. First, we need to understand how the Human Mind makes biases. While we went through the situation, several thoughts started to come to our minds (that's natural, we are defence aspirants and solutions must run in our brain every second).
+                </p>
+
+                <div class="video-simple-frame">
+                  <div class="video-box-ratio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CXunWTl0lkY?si=GNYCcfnOql14pIPt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-footer-bar">
+                    <span class="video-footer-text">Trouble playing the video?</span>
+                    <a href="https://www.youtube.com/watch?v=CXunWTl0lkY" target="_blank" rel="noopener noreferrer" class="video-external-btn">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
+
+                <p class="paragraph-text">
+                  We need to achieve a right mindset and make our heuristics more suitable for the armed forces.
+                </p>
+
+                <h2 class="content-h2">The 5 Core Decision Biases</h2>
+
+                <div class="biases-simple-list">
+                  
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">A. Loss Aversion &amp; Fear (Risk Mitigation)</div>
+                    <div class="bias-simple-desc">Humans are biologically hardwired to prioritize avoiding pain or loss over gaining an equivalent reward.</div>
+                    <div class="bias-simple-drive"><strong>How it drives decisions:</strong> The psychological pain of losing Rs 2,000 feels roughly twice as intense as the joy of finding Rs 2,000. This causes people to make conservative choices or double down on bad decisions to avoid "locking in" a loss (the Sunk Cost Fallacy).</div>
+                  </div>
+
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">B. Social Proof &amp; Belonging (Conformity)</div>
+                    <div class="bias-simple-desc">As tribal creatures, human survival historically depended on group acceptance. Here the group is your society, friends and family.</div>
+                    <div class="bias-simple-drive"><strong>How it drives decisions:</strong> When facing uncertainty, people look to others to determine correct behavior. This drives decisions ranging from buying a product with the most online reviews to conforming to workplace politics.</div>
+                  </div>
+
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">C. Moral &amp; Ethical Anchors</div>
+                    <div class="bias-simple-desc">People possess internal value systems (shaped by culture, empathy, and religion) that act as non-negotiable boundaries.</div>
+                    <div class="bias-simple-drive"><strong>How it drives decisions:</strong> Ethics often overrule raw self-interest. A person might reject a lucrative job offer if the company's practices violate their personal code of ethics, choosing self-respect over financial gain.</div>
+                  </div>
+
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">D. Emotional State (The Affect Heuristic)</div>
+                    <div class="bias-simple-desc">Decisions are strongly influenced by momentary emotional states like anger, joy, anxiety, or envy.</div>
+                    <div class="bias-simple-drive"><strong>How it drives decisions:</strong> High emotional arousal suppresses the brain's prefrontal cortex (the rational region). An angry person will make high-risk, punitive choices, while an anxious person will default to hyper-defensiveness.</div>
+                  </div>
+
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">E. Desire for Cognitive Ease (Lazy Brain)</div>
+                    <div class="bias-simple-desc">The brain consumes roughly 20% of the body's energy. To conserve energy, it defaults to mental shortcuts (heuristics) rather than deep analytical thinking whenever possible.</div>
+                  </div>
+
+                </div>
+
+                <h2 class="content-h2">Analyzing the Ideas</h2>
+
+                <div class="analysis-simple-grid">
+                  
+                  <div class="analysis-simple-card">
+                    <p><strong>A. Your Parents:</strong> Your parents thought to take the most easiest and reliable solutions. Their minds worked to form a solution out of their experiences. They wished not to spend their time on finding the owner instead letting it DELEGATED to someone else.</p>
+                    <p style="margin-top: 8px; color: var(--text-muted);"><em>Critique:</em> But, does this guarantee that the owner will be found for sure? Or does this anyhow guarantee us if havildar will take any action and not keep the money except for the reliable trust your family has on them?</p>
+                  </div>
+
+                  <div class="analysis-simple-card">
+                    <p><strong>B. Laabhesh:</strong> He suggested to take one of the most convenient options as per him - to search on social media.</p>
+                    <p style="margin-top: 8px; color: var(--text-muted);"><em>Critique:</em> But again, does this guarantee that the owner will be found for sure? This is a good attempt to find the owner, and even verify with Aadhar number or PAN number or even his food payment bill, but doesn't guarantees owners finding.</p>
+                  </div>
+
+                  <div class="analysis-simple-card">
+                    <p><strong>C. Mahek Chudasama:</strong> He suggested one of the most obvious idea what we as defence aspirants would get. But wait let us think it second time and more honestly:</p>
+                    <p style="margin-top: 6px;">Will this be our first step to find the owner? (Answer honestly, who will wish to go to police station and get round trip visits multiple times.)</p>
+                    <p style="margin-top: 6px;"><strong>If we submit it to Police Station, are we forgetting something?</strong></p>
+                    <ul style="margin: 6px 0 0 16px;">
+                      <li><strong>YES:</strong> One must collect a written receipt from them or file and FIR for the same else might be the owner never find his purse back. That's all?</li>
+                      <li><strong>NO:</strong> Receipt should have amount, details of cards and document details in the purse so if at all owner gets it, he gets his belonging completely safe.</li>
+                    </ul>
+                  </div>
+
+                  <div class="analysis-simple-card">
+                    <p><strong>D. Rahil Jadav:</strong> The most innovative idea was brought on the table. Sounds weird, but it may work with no complete certainty or guarantee.</p>
+                    <p style="margin-top: 8px; color: var(--text-muted);"><em>Critique:</em> Additionally, each society secretaries could have been contacted to find out if someone named Antriksh Patel lived in their society. But not a very solid proof idea.</p>
+                  </div>
+
+                </div>
+
+                <div class="triad-simple-box">
+                  <div class="triad-simple-title">The Foundation Triad</div>
+                  <p style="font-size: var(--font-size-xs); color: var(--text-muted);">Every plan had its own merit and demerit, now we have to take a decision revolving around:</p>
+                  <div class="triad-simple-pills">
+                    <span class="triad-simple-pill">ETHICS</span>
+                    <span class="triad-simple-pill">RESPONSIBILITY</span>
+                    <span class="triad-simple-pill">REALITY</span>
+                  </div>
+                  <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">A balance of all is required in every stage of SSB.</p>
+                </div>
+
+                <div class="simple-callout">
+                  <strong>Practical Intelligence Angle:</strong> One more thing, did you try contacting the bank? That's another good idea. You have the credit and debit card of 2 banks. You should have thought that.
+                </div>
+
+                <p class="paragraph-text" style="margin-top: 14px;">
+                  Let's see about Officers Trait, and come back to more situations in further lessons of the course.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 4: TRAITS OF OFFICER -->
+          <section class="lesson-stage" id="unitStage-4" data-unit="4">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>3 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 5 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Traits of Officer</h1>
+              <p class="lesson-lead-summary">Core traits &amp; Attributes Sought</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <h2 class="content-h2">Core Traits &amp; Attributes Sought:</h2>
+
+                <ul class="content-list">
+                  <li>
+                    <strong>Behavioral Consistency &amp; Authenticity:</strong> Assessors look for natural, un-coached behavior where your thoughts, speech, and actions align consistently across all five days.
+                  </li>
+                  <li>
+                    <strong>Teamwork &amp; Social Adaptability:</strong> The ability to cooperate with teammates, listen actively, contribute ideas, build consensus, and influence without dominating.
+                  </li>
+                  <li>
+                    <strong>Practical Intelligence &amp; Leadership:</strong> Sound logic, planning ability, resource utilization, initiative, and determination when facing physical or practical challenges.
+                  </li>
+                  <li>
+                    <strong>Resilience &amp; Character:</strong> Liveliness, emotional stability under pressure (adversity quotient), self-discipline, and general awareness of the surrounding world.
+                  </li>
+                </ul>
+
+                <div class="simple-image-box">
+                  <img src="../assets/images/core_trait.png" alt="Core Traits of an Officer" class="content-illustration-img">
+                  <div class="simple-image-caption">Core Officer Traits &amp; Attributes</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 5: 5 DAYS OF SSB (VIDEO) -->
+          <section class="lesson-stage" id="unitStage-5" data-unit="5">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Video</span>
+                <span class="meta-dot">•</span>
+                <span>27 min watch</span>
+                <span class="meta-dot">•</span>
+                <span>Module 6 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">5 Days of SSB</h1>
+              <p class="lesson-lead-summary">Official Video of SSB from SSB Allahabad</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <div class="video-simple-frame">
+                  <div class="video-box-ratio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XQQq5eFqXbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-footer-bar">
+                    <span class="video-footer-text">Trouble playing the video?</span>
+                    <a href="https://www.youtube.com/watch?v=XQQq5eFqXbA" target="_blank" rel="noopener noreferrer" class="video-external-btn">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
+
+                <div class="simple-callout">
+                  <strong>Official Join Indian Army Video:</strong> Complete overview of the 5-day assessment sequence at SSB Allahabad.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 6: THE HARD TRUTH -->
+          <section class="lesson-stage" id="unitStage-6" data-unit="6">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Tip</span>
+                <span class="meta-dot">•</span>
+                <span>1 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 7 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">The Hard Truth</h1>
+              <p class="lesson-lead-summary">English is must for becoming and officer</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  The hard truth about becoming an officer is this: <strong>you need a strong command of English, and you must never be afraid of hard work.</strong>
+                </p>
+
+                <h2 class="content-h2">Best way to improve English:</h2>
+
+                <ul class="content-list">
+                  <li>
+                    <strong>Loud reading practice:</strong> Read loudly from any book by standing on stool, chair or even your bed. This improves your fluency to speak and makes office like accent with some practice.
+                  </li>
+                  <li>
+                    <strong>Daily consistency:</strong> Daily 3-4 times, for 15-20 minutes shall guarantee improving your fluency.
+                  </li>
+                  <li>
+                    <strong>Conversational usage:</strong> Using English to speak with others shall contribute even further.
+                  </li>
+                </ul>
+
+                <p class="paragraph-text" style="margin-top: 18px; color: var(--text-muted); font-style: italic;">
+                  In upcoming future we shall work on English Improvement Course as well.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- UNIT 7: OFFICER LIKE QUALITY -->
+          <section class="lesson-stage" id="unitStage-7" data-unit="7">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>3 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 8 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Officer Like Quality</h1>
+              <p class="lesson-lead-summary">The game of OLQs</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  The SSB evaluates candidates against 15 Officer-Like Qualities (OLQs), which are categorized into four major factors representing psychological, social, and intellectual dimensions.
+                </p>
+
+                <div class="factors-simple-grid">
+                  
+                  <div class="factor-simple-card">
+                    <div class="factor-simple-title">Factor I: Planning &amp; Organising</div>
+                    <ul>
+                      <li>1. Effective Intelligence</li>
+                      <li>2. Reasoning Ability</li>
+                      <li>3. Organizing Ability</li>
+                      <li>4. Power of Expression</li>
+                    </ul>
+                  </div>
+
+                  <div class="factor-simple-card">
+                    <div class="factor-simple-title">Factor II: Social Adjustment</div>
+                    <ul>
+                      <li>5. Social Adaptability</li>
+                      <li>6. Cooperation</li>
+                      <li>7. Sense of Responsibility</li>
+                    </ul>
+                  </div>
+
+                  <div class="factor-simple-card">
+                    <div class="factor-simple-title">Factor III: Social Effectiveness</div>
+                    <ul>
+                      <li>8. Initiative</li>
+                      <li>9. Self Confidence</li>
+                      <li>10. Speed of Decision</li>
+                      <li>11. Ability to Influence Group</li>
+                      <li>12. Liveliness</li>
+                    </ul>
+                  </div>
+
+                  <div class="factor-simple-card">
+                    <div class="factor-simple-title">Factor IV: Dynamic</div>
+                    <ul>
+                      <li>13. Determination</li>
+                      <li>14. Courage</li>
+                      <li>15. Stamina</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <div class="simple-image-box">
+                  <img src="../assets/images/OLQ.png" alt="15 Officer-Like Qualities" class="content-illustration-img">
+                  <div class="simple-image-caption">15 Officer-Like Qualities (OLQs)</div>
+                </div>
+
+                <div class="simple-callout">
+                  Go through the definitions for now, we shall learn them individually one by one through activities and real-life example in further course.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 8: OFFICER LIKE QUALITY VIDEO -->
+          <section class="lesson-stage" id="unitStage-8" data-unit="8">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Video</span>
+                <span class="meta-dot">•</span>
+                <span>10 min watch</span>
+                <span class="meta-dot">•</span>
+                <span>Module 9 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Officer Like Quality Video</h1>
+              <p class="lesson-lead-summary">OLQ Video</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <div class="video-simple-frame">
+                  <div class="video-box-ratio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gkVi4bh6FGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-footer-bar">
+                    <span class="video-footer-text">Trouble playing the video?</span>
+                    <a href="https://www.youtube.com/watch?v=gkVi4bh6FGM" target="_blank" rel="noopener noreferrer" class="video-external-btn">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
+
+                <div class="simple-callout">
+                  <strong>Masterclass:</strong> Detailed breakdown of the four factors and real-world SSB expectations.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 9: CONCLUSION & WHAT'S NEXT -->
+          <section class="lesson-stage" id="unitStage-9" data-unit="9">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>2 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 10 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Conclusion &amp; What's Next</h1>
+              <p class="lesson-lead-summary">Wrapping up the fundamentals and preparing for Phase 1.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  Congratulations on completing your first step into the world of the Services Selection Board! You've learned that the SSB is not just a test, but a comprehensive evaluation of your character—your Manasa, Vacha, and Karma.
+                </p>
+
+                <h2 class="content-h2">Key Takeaways</h2>
+
+                <ul class="content-list">
+                  <li>The SSB looks for the right fit, not the perfect candidate.</li>
+                  <li>Your thoughts, words, and actions must align with consistency and authenticity.</li>
+                  <li>The 15 Officer-Like Qualities (OLQs) are the core metrics against which you are evaluated.</li>
+                  <li>Effective decision-making requires balancing ethics, responsibility, and reality.</li>
+                </ul>
+
+                <h2 class="content-h2" style="margin-top: 24px;">Are You Ready for next course?</h2>
+
+                <p class="paragraph-text">
+                  Understanding the theory is only the beginning. Now it's time to decode the actual you and put your knowledge into practice.
+                </p>
+
+                <p class="paragraph-text">
+                  In our next course, <strong>Decoding Yourself</strong>, we will dive deep into the specific exercises which shall help you in almost all the tests in SSB.
+                </p>
+
+                <div class="simple-callout">
+                  <em>The journey of a thousand miles begins with a single step. Start the next course from your Dashboard to continue!</em>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 10: ASSESSMENT -->
+          <section class="lesson-stage" id="unitStage-10" data-unit="10">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Assessment</span>
+                <span class="meta-dot">•</span>
+                <span>3 min check</span>
+                <span class="meta-dot">•</span>
+                <span>Module 11 of 11</span>
+              </div>
+              <h1 class="lesson-main-title">Assessment</h1>
+              <p class="lesson-lead-summary">Introduction · Check</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                
+                <div class="quiz-simple-container" id="quizContainer">
+                  <div class="quiz-simple-q">
+                    Which of the three dimensions of assessment evaluates 'What you do'?
+                  </div>
+
+                  <div class="quiz-simple-options" id="quizOptionsGroup">
+                    <button class="quiz-simple-opt" data-option-index="0" type="button">
+                      <span class="opt-prefix">A</span>
+                      <span>Manasa</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="1" type="button">
+                      <span class="opt-prefix">B</span>
+                      <span>Vacha</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="2" type="button">
+                      <span class="opt-prefix">C</span>
+                      <span>Karma</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="3" type="button">
+                      <span class="opt-prefix">D</span>
+                      <span>Dharma</span>
+                    </button>
+                  </div>
+
+                  <div class="quiz-simple-actions">
+                    <button class="btn-simple-primary" id="btnSubmitQuiz" disabled>Check Answer</button>
+                    <button class="btn-simple-secondary" id="btnRetryQuiz" style="display: none;">Try Again</button>
+                  </div>
+
+                  <div class="quiz-simple-feedback" id="quizFeedbackBox" style="display: none;">
+                    <div id="feedbackTitle"></div>
+                  </div>
+                </div>
+
+                <div class="completion-simple-box" id="courseCompleteBanner" style="display: none;">
+                  <div class="completion-simple-title">Course Completed</div>
+                  <div class="completion-simple-desc">You have finished all 11 modules of 'The Services Selection Board: Game or Gamble'.</div>
+                  <div class="completion-simple-actions">
+                    <a href="../courses.html" class="btn-simple-secondary">Back to Courses</a>
+                    <a href="../index.html" class="btn-simple-primary">Dashboard</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Sticky Bottom Bar -->
+        <footer class="player-bottom-bar">
+          <div class="player-nav-container">
+            <button class="btn-nav-simple btn-nav-prev" id="btnPrevLesson" disabled>
+              <span>← Previous</span>
+            </button>
+
+            <div class="player-center-meta" id="bottomLessonCounter">
+              Module 1 of 11
+            </div>
+
+            <button class="btn-nav-simple btn-nav-next" id="btnNextLesson">
+              <span>Next Lesson →</span>
+            </button>
+          </div>
+        </footer>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Progress saved</span>
+  </div>
+
+  <!-- Course JS Script -->
+  <script src="ssb-game-or-gamble.js"></script>
+</body>
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SSB Readiness Diagnostic Test & 16-OLQ Evaluation - DOSPDP by Col Vyas (Retd.)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>SSB Readiness Assessment & 16-OLQ Report - DOSPDP | Col Vyas (Retd.)</title>
+  
+  <!-- Slab Serif Typography: Roboto Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/ssb-readiness.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Mobile Sidebar Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo-container" aria-label="DOSPDP Home">
+          <img src="assets/images/logo.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-light">
+          <img src="assets/images/logo_dark.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-dark">
+        </a>
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar navigation">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- Dashboard -->
+        <div class="nav-group">
+          <a href="index.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+        </div>
+
+        <!-- LEARN Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">LEARN</span>
+          <a href="courses.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Courses</span>
+          </a>
+          <a href="video-recommendation.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+            <span>Video Recommendation</span>
+          </a>
+        </div>
+
+        <!-- PRACTICE Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">PRACTICE</span>
+          <a href="mock.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+              <path d="M9 14l2 2 4-4"></path>
+            </svg>
+            <span>Mock Tests</span>
+          </a>
+        </div>
+
+        <!-- TOOLS Section -->
+        <div class="nav-group">
+          <span class="nav-group-title">TOOLS</span>
+          <a href="swot.html" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <path d="M3 9h18"></path>
+              <path d="M9 21V9"></path>
+            </svg>
+            <span>SWOT Analysis</span>
+          </a>
+          <a href="ssb-readiness.html" class="nav-item active" aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <span>SSB Readiness Test</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      
+      <!-- Top Sticky Header -->
+      <header class="top-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open sidebar menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <h1 class="page-title">SSB Readiness Assessment</h1>
+        </div>
+
+        <div class="header-right">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="sun-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="5" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content Body -->
+      <main class="main-content">
+        
+        <!-- =================================================================
+             SCREEN 1: INTRO SCREEN
+             ================================================================= -->
+        <section id="intro-screen" class="assessment-screen active">
+          
+          <div class="intro-simple-wrapper">
+            
+            <!-- Hero / Main Header -->
+            <div class="intro-simple-card">
+              <h2 class="intro-simple-title">Do You Have the Mind of an Officer?</h2>
+              <p class="intro-simple-desc">
+                Most candidates fail when the pressure is real. This assessment forces quick decisions across 25 complex, ethically unclear situations and few reflex tests. We map your hidden behavioral patterns against the 16 Officer Like Qualities (OLQs).
+              </p>
+              <div class="intro-simple-action">
+                <button class="btn-start-free" id="btnStartAssessment">
+                  <span>Start Free Assessment</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- What Your Report Will Contain -->
+            <div class="intro-simple-card">
+              <h3 class="intro-section-title">What Your Report Will Contain</h3>
+              <p class="intro-simple-desc">
+                A complete psychological breakdown — composite SSB readiness score, all 16 OLQ scores with visual ratings, automatically generated SWOT, priority development plan, and a psychologist's observation.
+              </p>
+            </div>
+
+            <!-- Sample Report Preview (100% Free) -->
+            <div class="sample-report-preview-card">
+              <div class="sample-preview-header">
+                <h3 class="sample-preview-title">Sample Report Preview (100% Free)</h3>
+              </div>
+
+              <!-- Dominant Archetype -->
+              <div class="sample-archetype-row">
+                <span class="sample-archetype-label">Dominant Archetype</span>
+                <span class="sample-archetype-name">Strategic Commander</span>
+              </div>
+
+              <!-- Metrics -->
+              <div class="sample-metrics-grid">
+                <div class="sample-metric-box">
+                  <span class="sample-metric-label">SSB Readiness</span>
+                  <span class="sample-metric-value">74 / 100</span>
+                </div>
+                <div class="sample-metric-box">
+                  <span class="sample-metric-label">Decision Pattern</span>
+                  <span class="sample-metric-value">Balanced Analyst</span>
+                </div>
+                <div class="sample-metric-box">
+                  <span class="sample-metric-label">Integrity Grade</span>
+                  <span class="sample-metric-value" style="color: #10b981;">Strong</span>
+                </div>
+              </div>
+
+              <!-- Sample OLQ Breakdown -->
+              <div class="sample-olq-section">
+                <h4 class="sample-olq-heading">Sample OLQ Breakdown</h4>
+                
+                <div class="sample-olq-grid">
+                  <div class="sample-olq-card">
+                    <span class="sample-olq-title">Leadership</span>
+                    <span class="sample-olq-pct">78%</span>
+                    <span class="sample-tier-tag tier-tag-strong">STRONG</span>
+                  </div>
+
+                  <div class="sample-olq-card">
+                    <span class="sample-olq-title">Integrity</span>
+                    <span class="sample-olq-pct">88%</span>
+                    <span class="sample-tier-tag tier-tag-exceptional">EXCEPTIONAL</span>
+                  </div>
+
+                  <div class="sample-olq-card">
+                    <span class="sample-olq-title">Emotional Stability</span>
+                    <span class="sample-olq-pct">52%</span>
+                    <span class="sample-tier-tag tier-tag-developing">DEVELOPING</span>
+                  </div>
+
+                  <div class="sample-olq-card">
+                    <span class="sample-olq-title">Speed of Decision</span>
+                    <span class="sample-olq-pct">31%</span>
+                    <span class="sample-tier-tag tier-tag-needs-work">NEEDS WORK</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom CTA -->
+              <div class="sample-preview-cta">
+                <button class="btn-start-free btn-start-secondary">
+                  <span>Start Free Assessment</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- =================================================================
+             SCREEN 2: TEST ARENA & SCENARIO SCREEN
+             ================================================================= -->
+        <section id="test-screen" class="assessment-screen">
+          
+          <!-- Sticky Test Header Bar (Question Counter + Timer + Progress Bar) -->
+          <div class="test-header-sticky-container">
+            <div class="test-header-bar">
+              <div class="test-progress-info">
+                <span class="question-badge">Question <span id="q-current">1</span> of <span id="q-total">25</span></span>
+              </div>
+              
+              <div class="timer-widget">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span id="timer-text">20s</span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-track-wrapper">
+              <div class="progress-track-fill" id="progress-fill" style="width: 4%;"></div>
+            </div>
+          </div>
+
+          <!-- Scenario Card (Q1 - Q24) -->
+          <div class="scenario-card">
+            <p class="scenario-text" id="scenario-text">Loading situation...</p>
+          </div>
+
+          <!-- Options Grid -->
+          <div class="options-container" id="options-list">
+            <!-- Dynamic option items generated via JS -->
+          </div>
+
+          <!-- Shape Reflex Arena (Q25) -->
+          <div class="shape-reflex-box" id="shape-reflex-container" style="display: none;">
+            
+            <!-- Landing / Instructions -->
+            <div id="reflex-landing">
+              <h3 style="font-size: 1.4rem; font-weight: 900; margin-bottom: 12px; color: var(--text-main);">
+                ⚡ Shape Reflex &amp; Decision Speed Test
+              </h3>
+              <div class="reflex-instructions-card">
+                <p id="reflex-instructions" style="color: var(--text-main); font-size: 1rem; margin-bottom: 16px;">
+                  This test measures your quick decision speed and sustained attention under time pressure.
+                </p>
+                <div class="reflex-key-guide">
+                  <div class="key-guide-pill">
+                    <span class="kbd-badge">F</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;"><span style="display:inline-block;width:13px;height:13px;border-radius:50%;background:#2563eb;"></span>Circle</span>
+                  </div>
+                  <div class="key-guide-pill">
+                    <span class="kbd-badge">J</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;"><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2563eb;"></span>Square</span>
+                  </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">
+                  On mobile or touchscreen devices, you can tap the large on-screen buttons below.
+                </p>
+              </div>
+              <button class="btn-primary-action" id="btnStartReflex" style="margin: 0 auto;">
+                <span>Start Reflex Test Now</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Testing Active Area -->
+            <div id="reflex-testing" style="display: none;">
+              <div class="reflex-status-text" id="reflex-status">Stand by...</div>
+              
+              <div class="stimulus-arena">
+                <div class="reflex-shape" id="reflex-stimulus"></div>
+              </div>
+
+              <!-- Touch Buttons for Mobile/Tablet -->
+              <div class="reflex-touch-controls">
+                <button class="reflex-touch-btn touch-circle" id="touchCircleBtn">
+                  Key F
+                </button>
+                <button class="reflex-touch-btn touch-square" id="touchSquareBtn">
+                  Key J
+                </button>
+              </div>
+            </div>
+
+            <!-- Results Summary -->
+            <div id="reflex-results" style="display: none;">
+              <h3 style="font-size: 1.4rem; font-weight: 900; margin-bottom: 8px; color: var(--text-main);">
+                Reflex Test Completed
+              </h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                Your decision speed and cognitive precision metrics have been recorded.
+              </p>
+
+              <div class="reflex-stats-grid">
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="reflex-accuracy">0%</div>
+                  <div class="reflex-stat-label">Accuracy</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="reflex-avg-time">0 ms</div>
+                  <div class="reflex-stat-label">Avg Reaction Time</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="reflex-correct">0/15</div>
+                  <div class="reflex-stat-label">Correct Hits</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="reflex-speed-index">0</div>
+                  <div class="reflex-stat-label">Speed Index</div>
+                </div>
+              </div>
+
+              <button class="btn-primary-action" id="btnContinueFromReflex" style="margin: 0 auto;">
+                <span>Proceed to Memory Test</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Spatial / Working Memory Grid Test (Stage 2B) -->
+          <div class="shape-reflex-box memory-test-box" id="spatial-memory-container" style="display: none;">
+            
+            <!-- Landing / Instructions -->
+            <div id="memory-landing">
+              <div class="test-phase-badge">STAGE 2B &bull; WORKING MEMORY EVALUATION</div>
+              <h3 style="font-size: 1.4rem; font-weight: 900; margin: 8px 0 12px; color: var(--text-main);">
+                🧠 Spatial Pattern &amp; Working Memory Test
+              </h3>
+              <div class="reflex-instructions-card">
+                <p style="color: var(--text-main); font-size: 1rem; margin-bottom: 14px;">
+                  A grid of squares will be displayed. A few boxes will highlight for a short duration. Memorize the pattern, and once hidden, tap the exact squares from memory.
+                </p>
+                <div class="memory-rules-guide">
+                  <div class="key-guide-pill">
+                    <span>🎯 Dynamic Difficulty:</span>
+                    <span>Starts at <strong>3&times;3</strong>. High accuracy unlocks <strong>4&times;4</strong> and <strong>5&times;5</strong> grids.</span>
+                  </div>
+                  <div class="key-guide-pill">
+                    <span>⚡ Test Length:</span>
+                    <span><strong>8 Rounds</strong> maximum.</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-primary-action" id="btnStartMemoryTest" style="margin: 0 auto;">
+                <span>Start Memory Test</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Testing Active Area -->
+            <div id="memory-testing" style="display: none;">
+              <div class="memory-status-bar">
+                <div class="memory-round-indicator">
+                  <span class="memory-badge-pill" id="memory-grid-badge">3&times;3 Grid</span>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Round <strong id="memory-round-num">1</strong> of 8</span>
+                </div>
+                <div class="memory-phase-status" id="memory-phase-text">Memorize the pattern...</div>
+              </div>
+
+              <!-- Timer / Memorization progress bar -->
+              <div class="memory-timer-bar-wrap">
+                <div class="memory-timer-bar-fill" id="memory-timer-bar"></div>
+              </div>
+
+              <!-- The Interactive Dynamic Grid -->
+              <div class="memory-grid-arena">
+                <div class="memory-matrix grid-3x3" id="memory-matrix-grid">
+                  <!-- Injected dynamically via JS: 3x3, 4x4, or 5x5 -->
+                </div>
+              </div>
+
+              <!-- Selection tracker / Helper -->
+              <div class="memory-action-row" id="memory-action-row">
+                <span class="memory-selection-counter" id="memory-selection-counter">Memorize the pattern</span>
+              </div>
+            </div>
+
+            <!-- Results Summary -->
+            <div id="memory-results" style="display: none;">
+              <h3 style="font-size: 1.4rem; font-weight: 900; margin-bottom: 8px; color: var(--text-main);">
+                Memory Test Completed
+              </h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                Your working memory retention and spatial pattern recall have been recorded.
+              </p>
+
+              <div class="reflex-stats-grid">
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="memory-accuracy">0%</div>
+                  <div class="reflex-stat-label">Recall Accuracy</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="memory-max-grid">3x3</div>
+                  <div class="reflex-stat-label">Max Grid Span</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="memory-cleared-rounds">0/8</div>
+                  <div class="reflex-stat-label">Rounds Cleared</div>
+                </div>
+                <div class="reflex-stat-card">
+                  <div class="reflex-stat-val" id="memory-span-score">0</div>
+                  <div class="reflex-stat-label">Cognitive Index</div>
+                </div>
+              </div>
+
+              <button class="btn-primary-action" id="btnContinueFromMemory" style="margin: 0 auto;">
+                <span>Proceed to Self-Awareness Audit</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Self-Awareness & Candidature Self-Audit Container -->
+          <div class="self-audit-box" id="self-audit-container" style="display: none;">
+            
+            <div class="self-audit-header">
+              <div class="self-audit-badge">STAGE 3 &bull; CANDIDATE SELF-AWARENESS &amp; REFLECTION</div>
+              <h3 class="self-audit-title">Candidate Self-Rating &amp; Candidature Clarity</h3>
+              <p class="self-audit-subtitle">
+                Self-awareness is crucial in SSB (Psychologist Self-Description Test &amp; Personal Interview). Rate yourself honestly—your self-calibration will be analyzed against your situational decision metrics.
+              </p>
+            </div>
+
+            <!-- PART A: 5 Slider Questions -->
+            <div class="self-audit-card">
+              <h4 class="self-audit-section-title">
+                <span class="step-num-pill">A</span>
+                <span>Self-Assessment Rating (0 &ndash; 100%)</span>
+              </h4>
+              <p class="self-audit-note">Slide to rate your authentic capability across these 5 fundamental dimensions:</p>
+              
+              <div class="slider-group-grid">
+                
+                <!-- Slider 1 -->
+                <div class="self-slider-row">
+                  <div class="self-slider-info">
+                    <label for="slider-english" class="self-slider-label">1. How will you rate your English Speaking Skills?</label>
+                    <span class="self-slider-val-badge" id="val-english">0%</span>
+                  </div>
+                  <input type="range" id="slider-english" class="self-range-slider" min="0" max="100" value="0">
+                  <div class="slider-marks">
+                    <span>0% Beginner</span>
+                    <span>50% Conversational</span>
+                    <span>100% Fluent &amp; Articulate</span>
+                  </div>
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="self-slider-row">
+                  <div class="self-slider-info">
+                    <label for="slider-group" class="self-slider-label">2. How confident are you to speak in front of 100 people who are similar to you?</label>
+                    <span class="self-slider-val-badge" id="val-group">0%</span>
+                  </div>
+                  <input type="range" id="slider-group" class="self-range-slider" min="0" max="100" value="0">
+                  <div class="slider-marks">
+                    <span>0% Stage Fright</span>
+                    <span>50% Moderate</span>
+                    <span>100% Commanding &amp; Confident</span>
+                  </div>
+                </div>
+
+                <!-- Slider 3 -->
+                <div class="self-slider-row">
+                  <div class="self-slider-info">
+                    <label for="slider-onetoone" class="self-slider-label">3. How confident are you to speak in a one-to-one pattern / interview?</label>
+                    <span class="self-slider-val-badge" id="val-onetoone">0%</span>
+                  </div>
+                  <input type="range" id="slider-onetoone" class="self-range-slider" min="0" max="100" value="0">
+                  <div class="slider-marks">
+                    <span>0% Hesitant</span>
+                    <span>50% Comfortable</span>
+                    <span>100% Persuasive &amp; Composed</span>
+                  </div>
+                </div>
+
+                <!-- Slider 4 -->
+                <div class="self-slider-row">
+                  <div class="self-slider-info">
+                    <label for="slider-discipline" class="self-slider-label">4. How much disciplined are you in your daily life?</label>
+                    <span class="self-slider-val-badge" id="val-discipline">0%</span>
+                  </div>
+                  <input type="range" id="slider-discipline" class="self-range-slider" min="0" max="100" value="0">
+                  <div class="slider-marks">
+                    <span>0% Unstructured</span>
+                    <span>50% Moderately Regulated</span>
+                    <span>100% Highly Disciplined &amp; Rigorous</span>
+                  </div>
+                </div>
+
+                <!-- Slider 5 -->
+                <div class="self-slider-row">
+                  <div class="self-slider-info">
+                    <label for="slider-awareness" class="self-slider-label">5. How much self-aware candidate are you?</label>
+                    <span class="self-slider-val-badge" id="val-awareness">0%</span>
+                  </div>
+                  <input type="range" id="slider-awareness" class="self-range-slider" min="0" max="100" value="0">
+                  <div class="slider-marks">
+                    <span>0% Low Self-Clarity</span>
+                    <span>50% Aware of Basics</span>
+                    <span>100% Deeply Introspective &amp; Grounded</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PART B: Yes/No + Open-Ended Reflection Questions -->
+            <div class="self-audit-card">
+              <h4 class="self-audit-section-title">
+                <span class="step-num-pill">B</span>
+                <span>Self-Awareness &amp; Introspection Questions</span>
+              </h4>
+              <p class="self-audit-note">Assessors in SSB examine your immediate self-clarity and authentic personal insight.</p>
+
+              <div class="reflection-qa-list">
+                
+                <!-- QA 1 -->
+                <div class="reflection-item">
+                  <div class="reflection-header-row">
+                    <div class="reflection-q-text">1. Do you have a fixed wake-up and sleeping time?</div>
+                    <div class="reflection-toggle-group">
+                      <button type="button" class="btn-toggle-yn active" data-q="routine" data-val="Yes">Yes</button>
+                      <button type="button" class="btn-toggle-yn" data-q="routine" data-val="No">No</button>
+                    </div>
+                  </div>
+                  <div class="reflection-input-wrap">
+                    <input type="text" id="ref-routine-text" class="reflection-text-input" placeholder="Your typical routine (e.g. Wake-up: 05:30 AM | Sleep: 10:30 PM)">
+                  </div>
+                </div>
+
+                <!-- QA 2 -->
+                <div class="reflection-item">
+                  <div class="reflection-header-row">
+                    <div class="reflection-q-text">2. Can you tell your 3 strengths right now?</div>
+                    <div class="reflection-toggle-group">
+                      <button type="button" class="btn-toggle-yn active" data-q="strengths" data-val="Yes">Yes</button>
+                      <button type="button" class="btn-toggle-yn" data-q="strengths" data-val="No">No</button>
+                    </div>
+                  </div>
+                  <div class="reflection-input-wrap">
+                    <input type="text" id="ref-strengths-text" class="reflection-text-input" placeholder="List your 3 major strengths">
+                  </div>
+                </div>
+
+                <!-- QA 3 -->
+                <div class="reflection-item">
+                  <div class="reflection-header-row">
+                    <div class="reflection-q-text">3. Can you tell your biggest weakness right now?</div>
+                    <div class="reflection-toggle-group">
+                      <button type="button" class="btn-toggle-yn active" data-q="weakness" data-val="Yes">Yes</button>
+                      <button type="button" class="btn-toggle-yn" data-q="weakness" data-val="No">No</button>
+                    </div>
+                  </div>
+                  <div class="reflection-input-wrap">
+                    <input type="text" id="ref-weakness-text" class="reflection-text-input" placeholder="State your biggest weakness and what active step you take to overcome it">
+                  </div>
+                </div>
+
+                <!-- QA 4 -->
+                <div class="reflection-item">
+                  <div class="reflection-header-row">
+                    <div class="reflection-q-text">4. Can you clearly articulate your primary contribution and value to the Nation and Armed Forces?</div>
+                    <div class="reflection-toggle-group">
+                      <button type="button" class="btn-toggle-yn active" data-q="contribution" data-val="Yes">Yes</button>
+                      <button type="button" class="btn-toggle-yn" data-q="contribution" data-val="No">No</button>
+                    </div>
+                  </div>
+                  <div class="reflection-input-wrap">
+                    <input type="text" id="ref-contribution-text" class="reflection-text-input" placeholder="Your core purpose and contribution to the nation">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PART C: Candidate Name & Target Entry -->
+            <div class="self-audit-card">
+              <h4 class="self-audit-section-title">
+                <span class="step-num-pill">C</span>
+                <span>Personalize Your Report Card</span>
+              </h4>
+              <div class="candidate-audit-inputs-grid">
+                <div class="candidate-form-group">
+                  <label for="cand-name-audit" class="candidate-form-label">Candidate Name</label>
+                  <input type="text" id="cand-name-audit" class="candidate-form-input" value="Cadet" placeholder="Cadet">
+                </div>
+                <div class="candidate-form-group">
+                  <label for="cand-entry-audit" class="candidate-form-label">Target Entry</label>
+                  <input type="text" id="cand-entry-audit" class="candidate-form-input" value="NDA/CDS" placeholder="NDA/CDS">
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit / Generate Report Button -->
+            <div style="text-align: center; margin-top: 24px; padding-bottom: 20px;">
+              <button class="btn-primary-action" id="btnGenerateReportCard" style="margin: 0 auto;">
+                <span>Generate Comprehensive Report Card</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- =================================================================
+             SCREEN 3: PSYCHOMETRIC REPORT & ASSESSOR DOSSIER (PDF EXPORT)
+             ================================================================= -->
+        <section id="report-screen" class="assessment-screen">
+          
+          <!-- Top Action Toolbar -->
+          <div class="report-action-toolbar">
+            <div class="toolbar-group">
+              <button class="btn-report-action btn-retake" id="btnRetakeTop">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+                <span>Retake Assessment</span>
+              </button>
+            </div>
+
+            <div class="toolbar-group">
+              <button class="btn-report-action btn-export-pdf" id="btnExportPDF">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Export Report (PDF)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Official Report Container -->
+          <div class="dossier-wrapper" id="dossierWrapper">
+            
+            <!-- Report Card Header -->
+            <header class="dossier-header">
+              <div class="dossier-brand">
+                <img src="assets/images/logo.png" alt="DOSPDP Logo" class="dossier-logo logo-light">
+                <img src="assets/images/logo_dark.png" alt="DOSPDP Logo" class="dossier-logo logo-dark">
+                <div class="dossier-title-block">
+                  <h2>Report Card</h2>
+                  <p class="report-disclaimer-sub">This may not be absolutely accurate but will guide you your weakness and help you make a better candidate.</p>
+                </div>
+              </div>
+
+              <div class="dossier-meta-card">
+                <div>Candidate: <strong id="dossier-candidate-name">Cadet</strong></div>
+                <div>Target Entry: <strong id="dossier-candidate-board">NDA/CDS</strong></div>
+                <div>Assessment Date: <strong id="print-date-el">September 05, 2026</strong></div>
+              </div>
+            </header>
+
+            <!-- 1. Executive Summary -->
+            <div class="exec-summary-grid">
+              
+              <!-- Left: Archetype & Psychologist Note -->
+              <div class="exec-card-left">
+                <div class="archetype-header-row">
+                  <div>
+                    <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Assessor Personality Archetype</span>
+                    <h3 class="archetype-title" id="rep-archetype">Strategic Commander</h3>
+                  </div>
+                  <span class="archetype-badge" id="rep-archetype-badge">Command Track</span>
+                </div>
+
+                <p class="archetype-summary-text" id="rep-summary">
+                  You combine deep analytical thinking with natural leadership authority. You read complex situations quickly, build clear plans, and execute through people.
+                </p>
+
+                <div class="psych-note-box">
+                  <div style="font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 4px; color: var(--brand-gold);">
+                    Assessment based Clinical Note
+                  </div>
+                  <p id="rep-observation">"Loading clinical note..."</p>
+                </div>
+              </div>
+
+              <!-- Right: Gauge Meter & Readiness Index -->
+              <div class="exec-card-right">
+                <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;">
+                  Composite SSB Readiness Index
+                </span>
+
+                <div class="gauge-canvas-wrapper">
+                  <canvas id="gaugeCanvas" width="240" height="150"></canvas>
+                  <div class="gauge-score-overlay">
+                    <span class="gauge-score-number" id="composite-score-text">78</span>
+                    <span class="gauge-score-unit">/ 100</span>
+                  </div>
+                </div>
+
+                <span class="readiness-status-pill" id="readiness-badge">Recommended</span>
+
+                <div class="decision-pattern-tag" id="decision-pattern-tag">
+                  <span>⚖</span>
+                  <span>Decision Style: <strong>Balanced Decision Maker</strong></span>
+                </div>
+
+                <div class="cognitive-battery-summary" id="cognitive-battery-summary">
+                  <span>⚡ Reflex Speed: <strong id="rep-reflex-stat">-- ms</strong></span>
+                  <span style="color: var(--border-card);">|</span>
+                  <span>🧠 Working Memory: <strong id="rep-memory-stat">--</strong></span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- 2. Radar Chart & OLQ Group Breakdown Grid -->
+            <div class="radar-section-grid">
+              
+              <!-- 16-Axis Spider Chart Card -->
+              <div class="radar-canvas-card">
+                <h3>16-OLQ Spider Diagnostic Profile</h3>
+                <canvas id="radarCanvas" width="320" height="320"></canvas>
+                <div class="radar-legend">
+                  <div class="legend-item">
+                    <span class="legend-color-dot" style="background: #2563eb;"></span>
+                    <span>Candidate Profile</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-color-dot" style="background: #f59e0b;"></span>
+                    <span>Minimum Suggested Requirement (65%)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- OLQ Factor Bars Card -->
+              <div class="olq-bars-card" id="olq-bars-container">
+                <!-- Injected via renderOLQBars -->
+              </div>
+
+            </div>
+
+            <!-- 3. Assessor SWOT Analysis Matrix -->
+            <div>
+              <h3 class="dossier-section-heading">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M3 9h18"></path>
+                  <path d="M9 21V9"></path>
+                </svg>
+                <span>Assessor SWOT Matrix</span>
+              </h3>
+              <div class="swot-dossier-grid" id="swot-grid">
+                <!-- Injected via renderSwot -->
+              </div>
+            </div>
+
+            <!-- 4. Top Competencies & Vulnerabilities -->
+            <div class="competencies-grid">
+              
+              <div class="competency-card">
+                <h4 class="competency-card-title" style="color: #10b981;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Top Core Strengths</span>
+                </h4>
+                <ul class="competency-list" id="top-strengths-list">
+                  <!-- Injected via renderCompetencies -->
+                </ul>
+              </div>
+
+              <div class="competency-card">
+                <h4 class="competency-card-title" style="color: #ef4444;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <span>Primary Development Gaps</span>
+                </h4>
+                <ul class="competency-list" id="top-weaknesses-list">
+                  <!-- Injected via renderCompetencies -->
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- 5. 16-OLQ Detailed Evaluation Table -->
+            <div class="dossier-table-wrapper">
+              <h3 class="dossier-section-heading">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>Comprehensive 16-OLQ Diagnostic Assessment Table</span>
+              </h3>
+              
+              <table class="olq-deep-table">
+                <thead>
+                  <tr>
+                    <th style="width: 24%;">Officer-Like Quality</th>
+                    <th style="width: 14%; text-align: center;">Score</th>
+                    <th style="width: 16%; text-align: center;">Readiness Tier</th>
+                    <th style="width: 23%;">Assessor Diagnostic</th>
+                    <th style="width: 23%;">Targeted Action Plan</th>
+                  </tr>
+                </thead>
+                <tbody id="olq-table-body">
+                  <!-- Injected via renderOLQTable -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 6. Candidate Self-Awareness & Candidature Reflection -->
+            <div>
+              <h3 class="dossier-section-heading">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <span>Candidate Self-Awareness &amp; Candidature Reflection</span>
+              </h3>
+
+              <!-- Calibration & Self-Rating Grid -->
+              <div class="self-awareness-report-grid">
+                
+                <!-- Calibration Assessment Box -->
+                <div class="self-awareness-card">
+                  <div class="self-card-header">
+                    <span class="self-card-icon">🎯</span>
+                    <div>
+                      <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--text-main); margin-bottom: 2px;">Self-Awareness Calibration Index</h4>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">Self-Rating vs Objective Psychometric Alignment</span>
+                    </div>
+                  </div>
+                  
+                  <div class="calibration-stat-row">
+                    <div class="calibration-badge" id="calib-rating-badge">HIGH SELF-AWARENESS</div>
+                    <div class="calibration-score-val" id="calib-score-val">84%</div>
+                  </div>
+
+                  <p class="calibration-note-text" id="calib-note-text">
+                    <!-- Injected via renderSelfAwareness -->
+                  </p>
+                  
+                  <div class="self-awareness-callout">
+                    <strong>Assessor Note:</strong> Self-Awareness is tested directly in the Stage-2 Psychologist Self-Description Test (SDT) and throughout the Interviewing Officer (IO) interview. Honest self-clarity without self-delusion is a vital indicator of officer trainability.
+                  </div>
+                </div>
+
+                <!-- 5 Self-Rating Scorecards -->
+                <div class="self-awareness-card">
+                  <div class="self-card-header">
+                    <span class="self-card-icon">📊</span>
+                    <div>
+                      <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--text-main); margin-bottom: 2px;">Candidate Self-Rating Breakdown</h4>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">Self-Appraised Competency Scores</span>
+                    </div>
+                  </div>
+
+                  <div class="self-ratings-bars-list" id="self-ratings-bars-container">
+                    <!-- Injected via renderSelfAwareness -->
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Introspection & Reflection Dossier Table -->
+              <div class="introspection-dossier-card">
+                <h4 style="font-size: 0.95rem; font-weight: 800; margin-bottom: 14px; color: var(--text-main); display: flex; align-items: center; gap: 8px;">
+                  <span>📝</span>
+                  <span>Candidature Introspection &amp; Purpose Dossier</span>
+                </h4>
+                
+                <div class="introspection-grid" id="introspection-grid-container">
+                  <!-- Injected via renderSelfAwareness -->
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Portal Practice & Learning Recommendations -->
+            <div>
+              <h3 class="dossier-section-heading">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>Curated Portal Learning &amp; Practice Modules</span>
+              </h3>
+              
+              <div class="recommendations-grid" id="practice-recommendations-grid">
+                <!-- Injected via renderPracticeRecommendations -->
+              </div>
+            </div>
+
+            <!-- Dossier Footer -->
+            <footer class="dossier-footer" style="justify-content: center;">
+              <div>
+                DOSPDP by Col Vyas (Retd.) &bull; &copy; 2026 All Rights Reserved
+              </div>
+            </footer>
+
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Action performed successfully!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/ssb-readiness.js"></script>
+</body>
+</html>

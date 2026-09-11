@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What SSB wants from you? - Understanding Manasa-Vacha-Karma in the context of the 5-day SSB procedure | DOSPDP">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>What SSB wants from you? | DOSPDP</title>
+  
+  <!-- Slab Serif Typography: Roboto Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/course-player.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+</head>
+<body class="player-body">
+
+  <div class="player-wrapper">
+    
+    <!-- Top Bar -->
+    <header class="player-header">
+      <div class="player-header-left">
+        <a href="../index.html" class="brand-logo-container player-brand-logo" aria-label="DOSPDP Home">
+          <img src="../assets/images/logo.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-light">
+          <img src="../assets/images/logo_dark.png" alt="DOSPDP By Col Vyas (Retd.)" class="brand-logo-img logo-dark">
+        </a>
+        <div class="player-divider"></div>
+        <a href="../courses.html" class="player-back-btn" title="Back to Courses">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Courses</span>
+        </a>
+        <div class="player-divider"></div>
+        <div class="player-course-meta-header">
+          <span class="player-course-badge">Foundation</span>
+          <h1 class="player-course-title">What SSB wants from you?</h1>
+        </div>
+      </div>
+
+      <div class="player-header-right">
+        <!-- Progress Counter -->
+        <div class="player-progress-widget">
+          <div class="progress-labels">
+            <span class="progress-count" id="headerProgressCount">0/6 Done</span>
+            <span class="progress-percent" id="headerProgressPercent">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="headerProgressBar" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar Toggle -->
+        <button class="player-icon-btn" id="toggleSidebarBtn" title="Toggle Syllabus" aria-label="Toggle Syllabus">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="player-icon-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Mode" title="Toggle Theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="player-top-line">
+      <div class="player-top-line-fill" id="topProgressLine" style="width: 0%;"></div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="player-main-layout" id="playerMainLayout">
+      
+      <!-- Syllabus Sidebar -->
+      <aside class="player-sidebar" id="playerSidebar" aria-label="Course Syllabus">
+        
+        <div class="sidebar-course-card">
+          <div class="sidebar-thumb-wrap">
+            <img src="../assets/images/course_1.png" alt="Course Thumbnail" class="sidebar-thumb-img">
+          </div>
+          <div class="sidebar-course-details">
+            <div class="sidebar-course-name">What SSB wants from you?</div>
+            <div class="sidebar-course-desc">Foundation • 6 Modules</div>
+          </div>
+        </div>
+
+        <div class="syllabus-header">
+          <span class="syllabus-title">Curriculum</span>
+          <span class="syllabus-count">6 Units</span>
+        </div>
+
+        <nav class="syllabus-list" id="syllabusList">
+          
+          <button class="syllabus-item active" data-unit-index="0" id="syllabusNav-0">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">1. Mapping Manasa-Vacha-Karma</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="1" id="syllabusNav-1">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">2. Key traits assessors look for</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="2" id="syllabusNav-2">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 8 min</span>
+              </div>
+              <div class="syllabus-item-title">3. Understanding Yourself</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="3" id="syllabusNav-3">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 5 min</span>
+              </div>
+              <div class="syllabus-item-title">4. Your SWOT Analysis</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="4" id="syllabusNav-4">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Lesson</span>
+                <span class="unit-duration">• 10 min</span>
+              </div>
+              <div class="syllabus-item-title">5. Decoding Your SWOT</div>
+            </div>
+          </button>
+
+          <button class="syllabus-item" data-unit-index="5" id="syllabusNav-5">
+            <span class="syllabus-status-icon" aria-hidden="true">
+              <svg class="icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div class="syllabus-item-content">
+              <div class="syllabus-meta-row">
+                <span class="unit-type-pill">Assessment</span>
+                <span class="unit-duration">• 3 min</span>
+              </div>
+              <div class="syllabus-item-title">6. Assessment Check</div>
+            </div>
+          </button>
+
+        </nav>
+
+        <div class="sidebar-footer-box">
+          <button class="btn-reset-course" id="resetProgressBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span>Reset Progress</span>
+          </button>
+        </div>
+      </aside>
+
+      <div class="player-sidebar-backdrop" id="playerSidebarBackdrop"></div>
+
+      <!-- Main Stage Viewport -->
+      <main class="player-viewport" id="playerViewport">
+        
+        <div class="viewport-inner" id="viewportInner">
+          
+          <!-- UNIT 0: MAPPING MANASA-VACHA-KARMA -->
+          <section class="lesson-stage active" id="unitStage-0" data-unit="0">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>10 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 1 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Mapping Manasa-Vacha-Karma</h1>
+              <p class="lesson-lead-summary">Linking Manasa-Vacha-Karma to the tasks of 5 days of SSB.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  In the previous course <a href="ssb-game-or-gamble.html" class="inline-link" style="color: var(--brand-blue); text-decoration: underline; font-weight: 600;">The Services Selection Board: Game or Gamble</a>, we already know about Manasa-Vacha-Karma. Let's revisit it by linking it to the 5 days of SSB procedure.
+                </p>
+
+                <!-- Mansa Section -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0; margin-bottom: 8px;">1. Mansa (What You Think / Subconscious Mind)</h2>
+                  <div class="case-tag" style="display: inline-block; margin-bottom: 12px; font-weight: 600;">Assessed By: Psychologist</div>
+                  <p class="paragraph-text" style="margin-bottom: 14px;">
+                    <strong>Core Focus:</strong> Uncovers your subconscious thought patterns, imagination, perception, presence of mind, and natural behavioral tendencies under strict time limits.
+                  </p>
+                  <h3 class="content-h3" style="margin-top: 14px; margin-bottom: 8px;">Associated Tasks:</h3>
+                  <ul class="content-list" style="margin-top: 8px;">
+                    <li><strong>Stage 1 – Story Writing in PPDT:</strong> Writing a story around a blurred image within 4 minutes.</li>
+                    <li><strong>Stage 2 – Thematic Apperception Test (TAT):</strong> Writing 12 stories based on 11 projected pictures and 1 blank slide.</li>
+                    <li><strong>Stage 2 – Word Association Test (WAT):</strong> Writing your immediate first thought for 60 rapid-fire words (15 seconds per word).</li>
+                    <li><strong>Stage 2 – Situation Reaction Test (SRT):</strong> Writing quick, practical reactions to 60 routine life situations in 30 minutes.</li>
+                    <li><strong>Stage 2 – Self-Description Test (SDT):</strong> Introspective writing on how your parents, teachers/employers, friends, and you yourself view your strengths and weaknesses.</li>
+                  </ul>
+                </div>
+
+                <!-- Vacha Section -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0; margin-bottom: 8px;">2. Vacha (What You Speak / Communication &amp; Articulation)</h2>
+                  <div class="case-tag" style="display: inline-block; margin-bottom: 12px; font-weight: 600;">Assessed By: Interviewing Officer (IO)</div>
+                  <p class="paragraph-text" style="margin-bottom: 14px;">
+                    <strong>Core Focus:</strong> Evaluates your clarity of thought, expression, confidence, honesty, values, current affairs awareness, and self-awareness through verbal dialogue.
+                  </p>
+                  <h3 class="content-h3" style="margin-top: 14px; margin-bottom: 8px;">Associated Tasks:</h3>
+                  <ul class="content-list" style="margin-top: 8px;">
+                    <li><strong>Stage 1 – PPDT Narration &amp; Discussion:</strong> Narrating your individual story in 1 minute and discussing with the group to reach a common story consensus.</li>
+                    <li><strong>Stage 2 – Personal Interview:</strong> A 45-to-60-minute structured one-on-one conversation covering your educational choices, family environment, friends, hobbies, achievements, failures, and motivation to join the Armed Forces.</li>
+                    <li><strong>Stage 2 – Group Discussion (GD):</strong> Exchanging viewpoints on current events, national issues, or social topics.</li>
+                    <li><strong>Stage 2 – Lecturette:</strong> Preparing in 3 minutes and delivering a 3-minute informal talk on a selected topic in front of the group.</li>
+                    <li><strong>Stage 5 – Board Conference:</strong> Brief direct interaction with the entire panel of officers prior to final recommendation.</li>
+                  </ul>
+                </div>
+
+                <!-- Karma Section -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0; margin-bottom: 8px;">3. Karma / Karmana (What You Do / Ground Execution &amp; Actions)</h2>
+                  <div class="case-tag" style="display: inline-block; margin-bottom: 12px; font-weight: 600;">Assessed By: Group Testing Officer (GTO)</div>
+                  <p class="paragraph-text" style="margin-bottom: 14px;">
+                    <strong>Core Focus:</strong> Evaluates your practical intelligence, physical stamina, teamwork, initiative, cooperation, and leadership under physical or outdoor stress.
+                  </p>
+                  <h3 class="content-h3" style="margin-top: 14px; margin-bottom: 8px;">Associated Tasks (GTO Series):</h3>
+                  <ul class="content-list" style="margin-top: 8px;">
+                    <li><strong>Group Planning Exercise (GPE):</strong> Formulating individual written solutions and negotiating a group plan for an on-ground crisis model.</li>
+                    <li><strong>Progressive Group Task (PGT):</strong> Negotiating 4 sequential outdoor obstacles with helping materials (rope, plank, log) and a heavy load as a team.</li>
+                    <li><strong>Group Obstacle Race (Snake Race):</strong> Racing against other groups through 6 physical obstacles while carrying a stuffed canvas load.</li>
+                    <li><strong>Half Group Task (HGT):</strong> Outdoor obstacle task conducted in smaller sub-groups for closer observation of individual effort.</li>
+                    <li><strong>Individual Obstacles (IO):</strong> Clearing 10 physical obstacles individually within 3.5 minutes.</li>
+                    <li><strong>Command Task:</strong> Leading two chosen teammates as a commander to negotiate a complex obstacle.</li>
+                    <li><strong>Final Group Task (FGT):</strong> A final team obstacle task to demonstrate overall group performance and consistency.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 1: KEY TRAITS ASSESSORS LOOK FOR -->
+          <section class="lesson-stage" id="unitStage-1" data-unit="1">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>10 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 2 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Key traits assessors look for</h1>
+              <p class="lesson-lead-summary">Why natural, spontaneous, and original responses matter.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text" style="font-weight: 600; font-size: 1.05rem;">
+                  Assessors specifically look for natural, spontaneous, and original responses.
+                </p>
+
+                <h2 class="content-h2">Authenticity &amp; Originality (Uncoached Personality)</h2>
+
+                <div class="biases-simple-list">
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">The Conflict of Coaching</div>
+                    <p class="bias-simple-desc">
+                      Giving fixed, rehearsed, or pre-scripted answers taught by coaching institutes creates a distorted personality profile. Assessors easily detect inconsistencies when coached responses contradict a candidate's actual life history or ground behavior.
+                    </p>
+                  </div>
+
+                  <div class="bias-simple-item">
+                    <div class="bias-simple-title">Self-Awareness &amp; Honesty</div>
+                    <p class="bias-simple-desc">
+                      Assessors value candidates who speak about their life, family, and past failures with genuine self-awareness, personal accountability, and honesty, rather than projecting artificial perfection.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="simple-callout alert">
+                  Armed Forces really loses extremely good candidates because of pre-scripted answers found on web sources, YouTube or from seniors or some coaching institutes.
+                </div>
+
+                <h2 class="content-h2">Does this anywhere mean that going to Coaching is Wrong Practice?</h2>
+                <p class="paragraph-text">
+                  It is totally CORRECT. It is totally fine to go to coaching and training institutes to get trained from qualified trainers who have experience in their field. But always keep your minds open and have the ability to ask the right questions at every stage during the coaching period.
+                </p>
+
+                <h2 class="content-h2">If I wish to prepare on my own, is there a way to do so?</h2>
+                <p class="paragraph-text">
+                  YES. Know yourself. You are good to go and do wonders in SSB. We shall discuss on this in upcoming few lessons.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 2: UNDERSTANDING YOURSELF -->
+          <section class="lesson-stage" id="unitStage-2" data-unit="2">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>8 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 3 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Understanding Yourself</h1>
+              <p class="lesson-lead-summary">Definitions of Strength, Weakness, Opportunity and Threat.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  We shall know what is definitions of Strength, Weakness, Opportunity and Threat
+                </p>
+
+                <!-- Strengths -->
+                <div class="case-study-simple-box" style="margin-top: 20px;">
+                  <h2 class="content-h2" style="margin-top: 0;">Strengths</h2>
+                  <p class="paragraph-text">
+                    In the Services Selection Board (SSB) framework, strengths refer to the positive character traits, mental attributes, social skills, and behavioral habits that demonstrate a candidate's alignment with Officer-Like Qualities (OLQs).
+                  </p>
+                  
+                  <h3 class="content-h3">What Assessors Look For When You Discuss Strengths:</h3>
+                  <ul class="content-list">
+                    <li><strong>Evidence Over Adjectives:</strong> Claiming positive adjectives like "I am responsible" or "I am a good leader" carries little weight on its own. Assessors focus on whether your real-life examples and achievements support those labels.</li>
+                    <li><strong>Self-Awareness &amp; Honesty:</strong> A mature candidate presents a balanced self-view where recognized strengths are accompanied by genuine self-awareness of weaknesses and active efforts toward personal growth.</li>
+                    <li><strong>Behavioral Consistency:</strong> Your stated strengths in the interview or SDT must match what you wrote in your Personal Information Questionnaire (PIQ) and how you perform during practical ground tasks.</li>
+                  </ul>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0;">Weaknesses</h2>
+                  <p class="paragraph-text">
+                    In the Services Selection Board (SSB) evaluation framework, a weakness (or shortcoming) is not viewed as a fatal defect, but rather as an area for personal growth that tests a candidate's self-awareness, honesty, and emotional maturity.
+                  </p>
+
+                  <h3 class="content-h3">Common Mistakes Aspirants Make</h3>
+                  <ul class="content-list">
+                    <li><strong>Claiming Strengths Without Proof:</strong> Listing traits without being able to describe a specific incident or responsibility where that trait was applied.</li>
+                    <li><strong>Using Coached or Rehearsed Answers:</strong> Presenting pre-scripted strengths learned from coaching institutes rather than reflecting on your actual life experiences.</li>
+                    <li><strong>Hiding Weaknesses:</strong> Attempting to project an artificially "perfect" image instead of showing honest self-reflection.</li>
+                  </ul>
+
+                  <h3 class="content-h3">What Assessors Look For in Your Response</h3>
+                  <ul class="content-list">
+                    <li><strong>Genuine Self-Awareness:</strong> Presenting a real, relatable weakness rather than a "polished" or disguised strength (e.g., saying "I work too hard" or "I am a perfectionist"), which assessors view as artificial or rehearsed.</li>
+                    <li><strong>Personal Accountability:</strong> Accepting responsibility for your shortcomings rather than blaming parents, teachers, friends, or circumstances.</li>
+                    <li><strong>Actionable Improvement:</strong> Demonstrating concrete, practical efforts and daily habits you are employing to overcome or manage the weakness.</li>
+                    <li><strong>Consistency Across Techniques:</strong> Ensuring that the weaknesses you admit in the interview align with your Self-Description writing and your natural ground behavior.</li>
+                  </ul>
+                </div>
+
+                <!-- Identifying Threats -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0;">Identifying Threats (Risk Assessment &amp; Prioritization)</h2>
+                  <p class="paragraph-text">
+                    Identifying threats is about recognizing immediate hazards, constraints, and impending risks before taking action.
+                  </p>
+                  <ul class="content-list">
+                    <li><strong>Group Planning Exercise (GPE) &amp; SRT:</strong> When presented with a complex scenario, you must identify woven threats—such as medical emergencies, time constraints, or broken communications—and prioritize them based on urgency and severity (e.g., saving a human life before dealing with minor property damage).</li>
+                    <li><strong>GTO Outdoor Tasks (PGT / CT / FGT):</strong> Recognizing threats involves identifying structural instabilities, physical boundaries, and adhering strictly to color-coded ground rules (such as red out-of-bound areas) to prevent rule infringements or safety hazards.</li>
+                    <li><strong>Personal Interview:</strong> The Interviewing Officer observes how you handle personal or academic setbacks and whether you anticipate potential roadblocks in your career choices.</li>
+                    <li><strong>Key OLQs Assessed:</strong> Reasoning Ability (logical risk evaluation), Speed of Decision, and Courage / Emotional Composure under stress.</li>
+                  </ul>
+                </div>
+
+                <!-- Recognizing Opportunities -->
+                <div class="case-study-simple-box" style="margin-top: 24px;">
+                  <h2 class="content-h2" style="margin-top: 0;">Recognizing Opportunities (Resource Utilization &amp; Initiative)</h2>
+                  <p class="paragraph-text">
+                    Recognizing opportunities means identifying usable tools, gaps, time windows, or team strengths to solve a problem efficiently.
+                  </p>
+                  <ul class="content-list">
+                    <li><strong>Resource Management in GPE:</strong> Spotting overlooked assets in the narrative or model—such as a passing vehicle, a nearby railway station, local villagers, or a telephone booth—to resolve crises quickly.</li>
+                    <li><strong>Ground Execution (PGT / Command Task):</strong> Looking at an outdoor obstacle and recognizing structural fulcrums or how helping materials (planks, logs, ropes) can be combined to bridge a gap.</li>
+                    <li><strong>Group Discussions (GD):</strong> Spotting a pause or unaddressed perspective in the discussion to introduce a constructive, logical point or build consensus.</li>
+                    <li><strong>Key OLQs Assessed:</strong> Effective Intelligence (practical common sense), Organizing Ability (resource management), and Initiative (acting without waiting to be told).</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 3: YOUR SWOT ANALYSIS -->
+          <section class="lesson-stage" id="unitStage-3" data-unit="3">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>5 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 4 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Your SWOT Analysis</h1>
+              <p class="lesson-lead-summary">Reflect on your own Strengths, Weaknesses, Opportunities, and Threats.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  Now that you understand what Assessors look for, it's time to perform your own introspective SWOT Analysis.
+                </p>
+
+                <div class="case-study-simple-box" style="margin-top: 24px; text-align: center; padding: 36px 28px;">
+                  <h2 class="content-h2" style="margin-top: 0; margin-bottom: 12px;">SWOT Analysis Tool</h2>
+                  <p class="paragraph-text" style="max-width: 680px; margin: 0 auto 24px; line-height: 1.7;">
+                    Use our dedicated tool to map out your Strengths, Weaknesses, Opportunities, and Threats. This interactive tool will guide you in brainstorming and documenting aspects of your personality that are critical for your SSB preparation.
+                  </p>
+                  <a href="../swot.html" class="btn-pill-navy" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 24px; font-size: var(--font-size-sm); border-radius: var(--radius-full); font-weight: 700;">
+                    <span>Start SWOT Analysis</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 4: DECODING YOUR SWOT -->
+          <section class="lesson-stage" id="unitStage-4" data-unit="4">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Lesson</span>
+                <span class="meta-dot">•</span>
+                <span>10 min read</span>
+                <span class="meta-dot">•</span>
+                <span>Module 5 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Decoding Your SWOT</h1>
+              <p class="lesson-lead-summary">Analyzing your SWOT and applying the 80/20 rule for self-improvement.</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                <p class="paragraph-text">
+                  Now that we have the SWOT analysis, I want you to get a printout or actually draw it on a paper and have it handy with you.
+                </p>
+
+                <h2 class="content-h2">For each of your Strengths, answer the following questions on paper:</h2>
+                <ul class="content-list">
+                  <li>Are you sure this is your strength? [Yes / No / Not Sure]</li>
+                  <li>How does this strength make you feel more confident?</li>
+                  <li>How will this strength help you in SSB?</li>
+                  <li>What shall be done to even improvise this strength?</li>
+                </ul>
+
+                <h2 class="content-h2" style="margin-top: 28px;">For each of your Weaknesses, answer the following questions on paper:</h2>
+                <ul class="content-list">
+                  <li>Are you sure this is your weakness? [Yes / No / Not Sure]</li>
+                  <li>How do you think this weakness will not let you crack SSB?</li>
+                  <li>Find the root cause. Don't just identify the symptom ("I can't speak well."). Ask why:
+                    <ul style="margin: 8px 0 8px 24px; list-style-type: circle;">
+                      <li>Small vocabulary?</li>
+                      <li>Fear of making mistakes?</li>
+                      <li>Lack of practice?</li>
+                      <li>Poor thought organization?</li>
+                    </ul>
+                  </li>
+                  <li>If you were allowed to work on this weakness for only 20 minutes everyday, what shall you do?</li>
+                </ul>
+
+                <div class="simple-callout">
+                  <strong>Remember:</strong> The biggest opportunity you have today is that <em>"You know your Strengths and Weaknesses"</em> and the biggest threat shall be <em>"Not working on the Weaknesses and keeping mastering Strengths"</em>.
+                </div>
+
+                <h2 class="content-h2" style="margin-top: 28px;">The 80/20 Rule (Pareto Principle)</h2>
+                <p class="paragraph-text">
+                  Now let us prioritize our weaknesses first. I want you to rank all your weaknesses from most required weakness in SSB to least important weakness.
+                </p>
+                <p class="paragraph-text">
+                  Roughly 80% of results come from 20% of the causes or efforts.
+                </p>
+                <p class="paragraph-text">
+                  This means, 80% of your improvement in SSB performance will come from fixing the 20% of weaknesses that affect you the most.
+                </p>
+                <p class="paragraph-text">
+                  So let us immediately focus on top 20% weakness identified and work for 20 minutes everyday for next 20 days. No shortcuts will actually help you, and you are the biggest mentor to yourself. Target to reform yourself.
+                </p>
+                <p class="paragraph-text">
+                  After 20 days, reconsider giving SWOT and update your preferences and a major transformation will be seen in you and keep working with the same momentum.
+                </p>
+
+                <h2 class="content-h2" style="margin-top: 28px;">Key Takeaways</h2>
+                <ul class="content-list">
+                  <li>Don't try to improve all your weaknesses equally. Identify the 20% of weaknesses that are limiting your performance the most. Fixing them will produce nearly 80% of your overall improvement and significantly increase your chances of success in SSB.</li>
+                  <li>And don't let your strengths degrade. Keep up your strengths in daily activities and practice them at least once a week.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- UNIT 5: ASSESSMENT -->
+          <section class="lesson-stage" id="unitStage-5" data-unit="5">
+            <div class="lesson-header-card">
+              <div class="lesson-meta-bar">
+                <span>Assessment</span>
+                <span class="meta-dot">•</span>
+                <span>3 min check</span>
+                <span class="meta-dot">•</span>
+                <span>Module 6 of 6</span>
+              </div>
+              <h1 class="lesson-main-title">Assessment</h1>
+              <p class="lesson-lead-summary">MVK Mapping · Check</p>
+            </div>
+
+            <div class="lesson-content-card">
+              <div class="content-body">
+                
+                <div class="quiz-simple-container" id="quizContainer">
+                  <div class="quiz-simple-q">
+                    Which dimension of assessment is evaluated by the Interviewing Officer (IO)?
+                  </div>
+
+                  <div class="quiz-simple-options" id="quizOptionsGroup">
+                    <button class="quiz-simple-opt" data-option-index="0" type="button">
+                      <span class="opt-prefix">A</span>
+                      <span>Manasa</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="1" type="button">
+                      <span class="opt-prefix">B</span>
+                      <span>Vacha</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="2" type="button">
+                      <span class="opt-prefix">C</span>
+                      <span>Karma</span>
+                    </button>
+                    <button class="quiz-simple-opt" data-option-index="3" type="button">
+                      <span class="opt-prefix">D</span>
+                      <span>Dharma</span>
+                    </button>
+                  </div>
+
+                  <div class="quiz-simple-actions">
+                    <button class="btn-simple-primary" id="btnSubmitQuiz" disabled>Check Answer</button>
+                    <button class="btn-simple-secondary" id="btnRetryQuiz" style="display: none;">Try Again</button>
+                  </div>
+
+                  <div class="quiz-simple-feedback" id="quizFeedbackBox" style="display: none;">
+                    <div id="feedbackTitle"></div>
+                  </div>
+                </div>
+
+                <div class="completion-simple-box" id="courseCompleteBanner" style="display: none;">
+                  <div class="completion-simple-title">Course Completed</div>
+                  <div class="completion-simple-desc">You have finished all 6 modules of 'What SSB wants from you?'.</div>
+                  <div class="completion-simple-actions">
+                    <a href="../courses.html" class="btn-simple-secondary">Back to Courses</a>
+                    <a href="../index.html" class="btn-simple-primary">Dashboard</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Sticky Bottom Bar -->
+        <footer class="player-bottom-bar">
+          <div class="player-nav-container">
+            <button class="btn-nav-simple btn-nav-prev" id="btnPrevLesson" disabled>
+              <span>← Previous</span>
+            </button>
+
+            <div class="player-center-meta" id="bottomLessonCounter">
+              Module 1 of 6
+            </div>
+
+            <button class="btn-nav-simple btn-nav-next" id="btnNextLesson">
+              <span>Next Lesson →</span>
+            </button>
+          </div>
+        </footer>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Progress saved</span>
+  </div>
+
+  <!-- Course JS Script -->
+  <script src="what-ssb-wants-from-you.js"></script>
+</body>
+</html>
